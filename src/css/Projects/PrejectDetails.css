@@ -1,0 +1,213 @@
+.project-detail-holder{
+    width: 100%;
+    height: 75vh;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.large-image{
+    position: relative;
+    width: 90%;
+    margin: 4vh auto;
+}
+.landing-details{
+    position: absolute;
+    height: 25vh;
+    width: 40%;
+    right: 20px;
+    bottom:-7vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to bottom,rgba(110, 112, 112, 0.8),rgba(146, 146, 146, 0.3)); */
+    height: 100%;
+    width: 100%;
+}
+
+
+.iframe-content{
+    width: 100%;
+    margin: 10vh auto;
+    height: 50vh;
+    padding: 10px;
+    border: 5px double teal;
+    scrollbar-width: thin;
+    background: white;
+}
+
+.landing-details{
+    position: absolute;
+    height: auto;
+    width: 40%;
+    right: 20px;
+    bottom:-7vh;
+    background: #000;
+    padding: 10px 20px;
+    opacity: 0.9;
+}
+
+.landing-card-header{
+    font-size: 25px;
+    line-height: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.landing-card-container{
+    width: 100%;
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.landing-card{
+    background: teal;
+    color: white;
+    padding: 5px;
+    height: 80%;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.landing-card:hover{
+    padding: 10px;
+    transition: .3s ease-in-out;
+    background: rgb(0, 107, 107);
+}
+
+.landing-card ul{
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+}
+
+.landing-card ul h1{
+    font-size:   20px;
+    line-height: 20px;
+}
+
+.landing-card ul h1:hover{
+    font-size:   23px;
+    line-height: 20px;
+}
+
+.details-links{
+    width: 90%;
+    margin: -10px auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.details-links h1{
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 6px;
+    color: white;
+}
+
+.llink{
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.llink:hover{
+    color: black;
+    font-weight: 600;
+    transition: .4s ease-in-out;
+}
+
+.small-device-details{
+    width: 90%;
+    margin: 20vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:500px) {
+    .project-detail-holder{
+        height: 92vh;
+        padding: 5px;
+    }
+
+    .landing-image{
+        height: 40vh;
+    }
+    
+    .large-image{
+        position: relative;
+        width: 100%;
+        margin: 4vh auto;
+    }
+
+
+    .landing-details{
+        position: absolute;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        right: 0px;
+        bottom:-9vh;
+        padding: 15px;
+    }
+
+    .landing-card-header{
+        font-size: 25px;
+        line-height: 25px;
+        color: white;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    
+    .landing-card-container{
+        height: 20vh;
+    }
+
+    .details-links{
+        margin-top: 10vh;
+    }
+
+    .small-device-details{
+        width: 95%;
+        margin: 10vh auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .small-device-text{
+        width: 100%;
+        padding: 10px 0;
+        text-align: justify;
+
+    }
+    .small-device-text h1{
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .landing-card{
+        background: teal;
+        padding: 5px;
+        height: 100%;
+        width: 45%;
+        border-radius: 5px;
+    }
+    
+}

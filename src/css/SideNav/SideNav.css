@@ -1,0 +1,209 @@
+.nav-container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.5));
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header{
+    height: 10vh;
+    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pic{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    width: 100%;
+}
+
+
+.profile{
+    font-size: 45px;
+    color: teal;
+}
+
+.pic p{
+    font-size: 25px;
+}
+
+.pic h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.name{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    width: 100%;
+}
+
+.name h1{
+    font-weight: 400;
+}
+
+.nav-body{
+    height: 60vh;
+    width: 100%;
+}
+
+.nav-body ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap:10px;
+}
+
+.link-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+    clip-path: polygon(0 0,100% 0px,90% 100%,0% 100%);
+    padding: 10px;
+}
+.active{
+    border: 3px solid black;
+    font-weight: 900;
+    border-right: 3px solid black;
+}
+
+
+.icon{
+    color: black;
+    font-size: 30px;
+}
+
+.liink{
+    color: black;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.link-container:hover .icon{
+    color: rgb(12, 54, 54);
+    font-size: 27px;
+    transition: .2s ease-in-out;
+}
+
+.link-container:hover .liink{
+    color: rgb(12, 54, 54);
+    font-size: 22px;
+    transition: .2s ease-in-out;
+}
+
+.nav-footer{
+    height: 10vh;
+    padding: 10px;
+    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.nav-footer h1{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cv-hlder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.cv-icon{
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.cv-link{
+    font-size: 15px;
+    color: black;
+    font-weight: 900;
+}
+
+.cv-link:hover{
+    color: teal;
+    font-size: 17px;
+    transition: .2s ease-in-out;
+}
+
+
+@media screen and (max-width:1370px) {
+    
+    .nav-body ul{
+        gap:5px;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .nav-header{
+        display: none;
+    }
+    .nav-footer{
+        display: none;
+    }
+    .liink{
+        display: none;
+    }
+    .nav-body ul{
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .link-container{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+        border-radius: 50%;
+        clip-path: unset;
+        padding: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:375px) {
+    .link-container{
+        width: 35px;
+        height:35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+        border-radius: 50%;
+        clip-path: unset;
+        padding: 2px;
+    }
+
+    
+    .icon{
+        color: black;
+        font-size: 25px;
+    }
+
+}

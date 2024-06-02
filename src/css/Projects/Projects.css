@@ -1,0 +1,241 @@
+.projects-holder{
+    height: 100%;
+    width: 100%;
+}
+
+.project-head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px;
+    gap: 20px;
+}
+
+.project-head h1{
+    font-size: 35px;
+}
+
+.project-icon{
+    height: 35px;
+    width: 35px;
+}
+
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    height: auto;
+    width: 100%;
+}
+
+
+.single-projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    background: teal;
+    padding: 10px;
+}
+
+.project-images{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.project-img{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: 0;
+}
+
+.project-img1{
+    position: absolute;
+    height: 500px;
+    width: 250px;
+    right: 20px;
+    top: 80px;
+    border-radius: 10px;
+}
+
+.details{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.detail{
+    text-align: justify;
+    padding: 0 10px 0 0;
+}
+
+.detail h1{
+    font-size: 25px;
+    color: white;
+}
+
+.detail p{
+    font-size: 18px;
+    color: white;
+}
+
+.det-button{
+    padding: 3px 19px;
+    background: white;
+    border-radius: 4px;
+    color: teal;
+    font-weight: 400;
+}
+
+.single-projects-icon{
+    color: teal;
+    margin-left: 3px;
+}
+
+.web-link{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1370px) {
+    .projects{
+        gap: 20px;
+        padding: 0px;
+        align-items: start;
+        justify-content: start;
+    }
+    .single-projects{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 400px;
+        background: teal;
+        padding: 10px;
+    }
+
+    .project-img1{
+        position: absolute;
+        height: 400px;
+        width: 250px;
+        right: 10px;
+        top: 40px;
+        border-radius: 10px;
+    }
+    
+    .details{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .det-button{
+        padding: 3px 19px;
+        background: white;
+        border-radius: 4px;
+        color: teal;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .single-projects-icon{
+        color: teal;
+        margin-left: 3px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:1050px) {
+    .projects-holder{
+        height: 78vh;
+        width: 100%;
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+        
+    .projects{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .single-projects{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: teal;
+        padding: 10px;
+    }
+
+    .project-images{
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+        left: none;
+        top: 40px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .projects-holder{
+        height: 92vh;
+        width: 100%;
+        overflow: auto;
+    }
+    
+    
+    .projects{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .single-projects{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: teal;
+        padding: 10px;
+    }
+
+    .project-images{
+        padding: 10px 0;
+        width: 100%;
+        height: auto;
+        left: none;
+        top: 40px;
+    }
+    .project-img{
+        height: auto;
+    }
+    
+    .project-img1{
+        height: auto;
+        width: 250px;
+        right: 10px;
+        top: 40px;
+    }
+
+
+}
