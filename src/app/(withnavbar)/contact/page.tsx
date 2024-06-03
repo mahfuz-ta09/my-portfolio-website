@@ -56,7 +56,7 @@ const ContactPage = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='name-secton'>
             <div className="form-group">
-              <label htmlFor="name">First name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 required

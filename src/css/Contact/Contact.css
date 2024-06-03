@@ -149,7 +149,7 @@ button:hover {
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:450px) {
   .contact-holder{
     width: 100%;
     height: 92vh;
@@ -157,9 +157,7 @@ button:hover {
   } 
 
   .form-container {
-    background: rgb(70, 156, 156);
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 95%;
     margin: 10vh auto 0;
