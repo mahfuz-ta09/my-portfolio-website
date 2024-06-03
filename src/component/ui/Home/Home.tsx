@@ -19,9 +19,9 @@ const Home = () => {
             <h1>mahfuz.ta09@gmail.com</h1>
           </div>
           <div className="socio-item">
-            <FaFacebook className="socio-item-link" />
-            <FaLinkedin className="socio-item-link"/>
-            <FaGithub className="socio-item-link"/>
+            <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link>
+            <Link href=""><FaLinkedin className="socio-item-link" /></Link>
+            <Link href="https://github.com/mahfuz-ta09"><FaGithub className="socio-item-link"   /></Link>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
 
         <div className="small-details">
-              <h1>What do I bring to the table?</h1>
+              <h1>What expertise do I bring?</h1>
               <div className="small-details-holder">
                   <div className="small-det">
                     <p  className="small-det-p">optimal</p>

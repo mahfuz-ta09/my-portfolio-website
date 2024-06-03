@@ -188,7 +188,8 @@
 }
 
 
-@media screen and (max-width:375px) {
+
+@media screen and (max-width:390px) {
     .link-container{
         width: 35px;
         height:35px;
@@ -196,9 +197,7 @@
         align-items: center;
         justify-content: center;
         background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
-        border-radius: 50%;
-        clip-path: unset;
-        padding: 2px;
+        border-radius: 60%;
     }
 
     

@@ -84,11 +84,14 @@
     justify-content: end;
     margin-left: -90px;
     margin-bottom: -180px;
-    background-color: white;
     padding: 15px;
     border-radius: 5px;
-    border: 2px solid teal;
-    opacity: .9;
+background: rgba(0, 0, 0, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.1px);
+-webkit-backdrop-filter: blur(11.1px);
+border: 1px solid rgba(0, 0, 0, 1);
 }
 
   
@@ -99,12 +102,13 @@
 .hero-tag p{
     font-size: 14px;
     font-weight: 500;
+    color: white;
 }
 
 .hero-tag h1{
     font-size: 34px;
     font-weight: 700;
-    color: teal;
+    color: white;
 }
 
 .hero-des{
@@ -112,7 +116,7 @@
     line-height: 15px;
     font-weight: 500;
     text-align: justify;
-    color: black;
+    color: white;
 }
 
 .small-details{
@@ -354,7 +358,8 @@
         line-height: 15px;
         font-weight: 600;
         text-align: justify;
-        color: black;
+        color: white;
+        padding-top: 10px;
     }
 
 
@@ -368,7 +373,7 @@
     }
     
     .cv-checker{
-        height: 10vh;
+        /* height: 10vh; */
         padding: 10px;
         margin: 10px 0;
         width: 100%;

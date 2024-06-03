@@ -51,17 +51,16 @@
 .window{
     width: 1400px;
     height: 80vh;
-    background-image: linear-gradient(to right top, #00aeae, #4bb4b4, #6dbaba, #89c0c0, #a3c6c6);
-    opacity: 0.9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(170px); 
-    -webkit-backdrop-filter: blur(170px); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
+    background: rgba(0, 235, 226, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(0, 235, 226, 0.8);
 }
 
 .nav{
