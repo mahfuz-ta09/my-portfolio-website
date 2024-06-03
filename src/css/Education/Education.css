@@ -39,9 +39,14 @@
     justify-content: start;
     flex-direction: column;
     gap: 10px;
-    color: black;
-    background: white;
-    box-shadow: 0 14px 38px rgba(99, 96, 96, 0.8);
+    color: white;
+   
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.1px);
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .lan{
@@ -53,9 +58,14 @@
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    color: black;
-    background: white;
-    box-shadow: 0 14px 38px rgba(99, 96, 96, 0.8);
+    color: white;
+    
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.1px);
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .edu-details{
@@ -64,7 +74,7 @@
     align-items: start;
     justify-content: start;
     gap: 0px;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
     width: 100%;
 }
 
@@ -79,7 +89,7 @@
 .details-1-icon{
     width: 30px;
     height: 30px;
-    color: black;
+    color: white;
 }
 
 .lan-det{
@@ -90,7 +100,7 @@
     align-items: start;
     justify-content: start;
     padding: 20px;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 @media screen and (max-width:1050px) {
     .education-container{

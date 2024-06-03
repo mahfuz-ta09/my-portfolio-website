@@ -4,6 +4,7 @@ import { faBookAtlas, faSchool } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
+
 const EducationPage = () => {
   return (
     <div className="education-container">
