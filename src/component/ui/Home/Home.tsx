@@ -8,8 +8,6 @@ import { AiFillDatabase } from "react-icons/ai"
 import { IoTabletLandscape } from "react-icons/io5"
 import { BiLinkAlt } from "react-icons/bi"
 import Link from "next/link"
-import me from "@/assets/myppic.jpg"
-import Image from "next/image"
 
 
 const Home = () => {
@@ -29,7 +27,7 @@ const Home = () => {
 
       <div className="home-element">
         <div className="hero">
-          <Image className="profile-pic" src={me} alt="My Photo"/>
+          <img className="profile-pic" src='/assets/myppic.jpg' alt="My Photo"/>
           <div className="hero-details">
             <div className="hero-tag">
               <p>Hello, I'm</p>

@@ -3,9 +3,6 @@ import "@/css/Projects/Projects.css"
 import { faArrowRight, faFile } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from 'next/navigation'
-import im from '@/assets/Capture.png'
-import im1 from '@/assets/Capture3.png'
-import Image from "next/image"
 import Link from "next/link"
 
 
@@ -41,8 +38,8 @@ const ProjectPage = () => {
                 <button onClick={()=>handleRoute("kk")} className="det-button">details<FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} /></button>
             </div>
             <div className="project-images">
-              <Image className="project-img" src={im} alt="" />
-              <Image className="project-img1" src={im1} alt="" />
+              <img className="project-img" src='/assets/Capture.png' alt="" />
+              <img className="project-img1" src="/assets/Capture3.png" alt="" />
             </div>
           </div>
 

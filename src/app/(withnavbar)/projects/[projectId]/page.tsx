@@ -1,7 +1,4 @@
 import '@/css/Projects/PrejectDetails.css'
-import im from '@/assets/Capture.png'
-import im1 from '@/assets/Capture3.png'
-import Image from 'next/image'
 import Link from 'next/link'
 
 // :{params.projectId}
@@ -12,7 +9,7 @@ const page = ({ params }: { params: { projectId: string } }) => {
       <h1>Project name: MKN Global Consultant</h1>
       {/* <iframe className='iframe-content' src='https://mknglobal.co.uk/'/> */}
       <div className='large-image'>
-        <Image className='landing-image' src={im} alt="website's ss" />
+        <img className='landing-image' src='/assets/Capture.png' alt="website's ss" />
         <div className="overlay"></div>
         <div className='landing-details'>
           <h1 className='landing-card-header'>Techknowlogy used:</h1>
@@ -49,7 +46,7 @@ const page = ({ params }: { params: { projectId: string } }) => {
           <h1>-Efficient Navigation for Quick Access</h1>
           <h1>-Reliable Performance Across All Devices</h1>
         </div>
-        <Image src={im1} alt='Image in mobile device' />
+        <img src='/assets/Capture3.png' alt='Image in mobile device' />
       </div>
     </div>
   )
