@@ -30,7 +30,7 @@ const Home = () => {
           <img className="profile-pic" src='/assets/myppic.jpg' alt="My Photo"/>
           <div className="hero-details">
             <div className="hero-tag">
-              <p>Hello, I'm</p>
+              <p>Hello, I am</p>
               <h1>Md Mahfuz Anam Tasnim</h1>
             </div>
             <h1 className="hero-des">I am a dedicated and practicing MERN stack developer with solid knowledge 
