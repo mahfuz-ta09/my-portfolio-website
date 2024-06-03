@@ -54,7 +54,6 @@
 }
 
 .home-element{
-    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -142,7 +141,6 @@
 
 .small-det{
     width: 100px;
-    height:100px;
     border-radius: 4px;
     background: #fff;
     display: flex;
@@ -263,7 +261,7 @@
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:450px) {
     .home-content{
         height: 92vh;
         width:  100%;
@@ -271,7 +269,7 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        gap: 0px;
+        gap: 20px;
         position: relative;
         overflow: auto;
     }
@@ -307,6 +305,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 50px;
         padding: 5px;
     }
 

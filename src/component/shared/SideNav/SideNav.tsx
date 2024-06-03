@@ -6,8 +6,6 @@ import { FaCrop } from "react-icons/fa"
 import { FaQuidditch } from "react-icons/fa"
 import { FaRegFilePdf } from "react-icons/fa"
 import { BsFillMortarboardFill } from "react-icons/bs"
-import Image from 'next/image'
-import me from "@/assets/aspp.webp"
 import { BiLinkAlt } from "react-icons/bi"
 
 
