@@ -20,7 +20,7 @@ const Home = () => {
           </div>
           <div className="socio-item">
             {/* <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link> */}
-            <Link href="https://www.linkedin.com/in/md-mahfuz-anam/"><FaLinkedin className="socio-item-link" /></Link>
+            <Link href="https://www.linkedin.com/in/ma-tasnim/"><FaLinkedin className="socio-item-link" /></Link>
             <Link href="https://github.com/mahfuz-ta09"><FaGithub className="socio-item-link"   /></Link>
           </div>
         </div>
