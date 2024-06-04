@@ -31,7 +31,7 @@ const Home = () => {
           <div className="hero-details">
             <div className="hero-tag">
               <p>Hello, I am</p>
-              <h1>Md Mahfuz Anam Tasnim</h1>
+              <h1 data-text="Md Mahfuz Anam Tasnim">Md Mahfuz Anam Tasnim</h1>
             </div>
             <h1 className="hero-des">I am a dedicated and practicing MERN stack developer with solid knowledge 
               in different technologies and self-motivated and hardworking for an opportunity to work in a 

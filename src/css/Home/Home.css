@@ -107,7 +107,29 @@
 .hero-tag h1{
     font-size: 34px;
     font-weight: 700;
-    color: white;
+    color: rgb(126, 124, 124);
+    position: relative;
+}
+
+.hero-tag h1::before{
+    content: attr(data-text);
+    position:absolute;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 4s linear infinite;
+    filter: drop-shadow(0 0 20px #fff);
+    color: #fff;
+}
+
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
 }
 
 .hero-des{
@@ -151,12 +173,10 @@
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-
-/* From https://css.glass */
-background: rgba(0, 0, 0, 0.5);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
-backdrop-filter: blur(8.7px);
--webkit-backdrop-filter: blur(8.7px);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
 }
 
 
@@ -176,7 +196,6 @@ backdrop-filter: blur(8.7px);
 
 .small-det:hover{
     transition: .2s ease-in-out;
-    /* transform: translate(10px,-10px); */
     transform: scale(1.1,1.1);
 }
 
@@ -225,6 +244,7 @@ backdrop-filter: blur(8.7px);
         font-size: 30px;
         line-height: 30px;
         font-weight: 700;
+        line-height: 35px;
     }
     
     .profile-pic{
@@ -408,6 +428,13 @@ backdrop-filter: blur(8.7px);
         min-height: 75vh;
     }
 
+    .hero-tag h1{
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(126, 124, 124);
+        position: relative;
+    }
+    
     
     .cv-checker{
         height: 16vh;
