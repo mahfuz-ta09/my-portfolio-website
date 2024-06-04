@@ -19,7 +19,7 @@ const Home = () => {
             <h1>mahfuz.ta09@gmail.com</h1>
           </div>
           <div className="socio-item">
-            <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link>
+            {/* <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link> */}
             <Link href="https://www.linkedin.com/in/md-mahfuz-anam-tasnim-b067b7311/"><FaLinkedin className="socio-item-link" /></Link>
             <Link href="https://github.com/mahfuz-ta09"><FaGithub className="socio-item-link"   /></Link>
           </div>
