@@ -4,7 +4,6 @@ import { faArrowRight, faFile, faGlobe } from "@fortawesome/free-solid-svg-icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from 'next/navigation'
 import Link from "next/link"
-import { faWebAwesome } from "@fortawesome/free-brands-svg-icons"
 
 
 const ProjectPage = () => {
