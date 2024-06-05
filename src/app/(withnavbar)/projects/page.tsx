@@ -1,9 +1,10 @@
 'use client'
 import "@/css/Projects/Projects.css"
-import { faArrowRight, faFile } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRight, faFile, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from 'next/navigation'
 import Link from "next/link"
+import { faWebAwesome } from "@fortawesome/free-brands-svg-icons"
 
 
 const ProjectPage = () => {
@@ -16,6 +17,7 @@ const ProjectPage = () => {
 
   return (
     <div className="projects-holder">
+      
       <div className="project-head">
         <FontAwesomeIcon className="project-icon" icon={faFile} />
         <h1>Projects</h1>
@@ -34,17 +36,15 @@ const ProjectPage = () => {
                     a seamless user experience, making the complex visa process more accessible and manageable.
                   </p>
                 </div>
-                <Link className="web-link" href="https://mknglobal.co.uk/">visit live site</Link>
-                <button onClick={()=>handleRoute("kk")} className="det-button">details<FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} /></button>
+                <div className="link-holder">
+                  <Link  href="https://mknglobal.co.uk/" className="site-link"><FontAwesomeIcon className="single-projects-icon" icon={faGlobe} />site</Link>
+                  <button onClick={()=>handleRoute("1")} className="detls-link"><FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} />details</button>
+                </div>
             </div>
-            <div className="project-images">
-              <img className="project-img" src='/assets/Capture.png' alt="" />
-              <img className="project-img1" src="/assets/Capture3.png" alt="" />
-            </div>
+            <img className="project-img1" src="/assets/Capture3.png" alt="" />
           </div>
 
 
-      
       </div>
 
     </div>

@@ -1,5 +1,9 @@
 .projects-holder{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -7,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    width: 100%;
     padding: 15px;
     gap: 20px;
 }
@@ -22,223 +27,165 @@
 
 
 .projects{
+    width: 80%;
+    height: 60vh;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 30px;
-    height: auto;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(11.1px);
-    -webkit-backdrop-filter: blur(11.1px);
-    border: 1px solid rgba(0, 0, 0, 1);
 }
-
 
 .single-projects{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    height: 450px;
-    /* background: teal; */
-    padding: 10px;
-}
-
-.project-images{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0;
-}
-
-.project-img{
-    position: absolute;
-    width: 100%;
-    height: 350px;
-    left: 0;
-    top: 0;
-}
-
-.project-img1{
-    position: absolute;
-    height: 500px;
-    width: 250px;
-    right: 20px;
-    top: 80px;
-    border-radius: 10px;
-}
-
-.details{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
     gap: 20px;
 }
 
-.detail{
-    text-align: justify;
-    padding: 0 10px 0 0;
+.details{
+    flex: 2;
+    width: fit-content;
+    gap:20px;
+    padding: 5px;
 }
+
+
+.detail{
+    border-bottom: 2px solid white;
+    padding: 0px 0;
+    flex: 1;
+}
+
 
 .detail h1{
     font-size: 25px;
     color: white;
+    font-weight: 700;
 }
+
 
 .detail p{
+    text-align: justify;
     font-size: 18px;
-    color: white;
+    color: black;
 }
 
-.det-button{
-    padding: 3px 19px;
-    background: white;
-    border-radius: 4px;
-    color: teal;
-    font-weight: 400;
+.project-img1{
+    flex: 1;
+    width: 250px;
+    height: 350px;
 }
+
+.link-holder{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+
 
 .single-projects-icon{
+    width:  18px;
+    height: 18px;
+    padding: 1px;
+    border: .5px solid teal;
+    border-radius: 50%;
     color: teal;
-    margin-left: 3px;
 }
 
-.web-link{
-    color: white;
-    text-decoration: underline;
-    text-align: center;
+.site-link{
+    flex: 1;
+    background: #fff;
+    width: fit-content;
+    border-radius: 2px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    padding: 7px;
+    font-weight: 700;
+    color: teal;
+    box-shadow: 0 10px 40px 0 black;
 }
 
-@media screen and (max-width:1370px) {
-    .projects{
-        gap: 20px;
-        padding: 0px;
-        align-items: start;
-        justify-content: start;
-    }
-    .single-projects{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 400px;
-        padding: 10px;
-    }
-
-    .project-img1{
-        position: absolute;
-        height: 400px;
-        width: 250px;
-        right: 10px;
-        top: 40px;
-        border-radius: 10px;
-    }
-    
-    .details{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .det-button{
-        padding: 3px 19px;
-        background: white;
-        border-radius: 4px;
-        color: teal;
-        font-weight: 400;
-        font-size: 15px;
-    }
-
-    .single-projects-icon{
-        color: teal;
-        margin-left: 3px;
-        font-size: 15px;
-    }
-
-
+.detls-link{
+    flex: 1;
+    background: #fff;
+    width: fit-content;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    padding: 7px;
+    font-weight: 700;
+    color: teal;
+    box-shadow: 0 10px 40px 0 black;
 }
 
-@media screen and (max-width:1050px) {
-    .projects-holder{
-        height: 78vh;
-        width: 100%;
-        overflow: auto;
-        scrollbar-width: thin;
-    }
-        
+.site-link:hover{
+    transition: .4s ease-out;
+    transform: scale(1.05);
+}
+
+.detls-link:hover{
+    transition: .4s ease-out;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width:850px) {
     .projects{
+        width: 100%;
         flex-direction: column;
-        gap: 20px;
-        padding: 10px;
     }
     
-    .single-projects{
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .project-images{
-        padding: 10px 0;
-        width: 100%;
-        height: auto;
-        left: none;
-        top: 40px;
+    .detail h1{
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
     }
 
 }
 
 @media screen and (max-width:450px) {
     .projects-holder{
-        height: 92vh;
-        width: 100%;
-        overflow: auto;
-    }
-    
-    
-    .projects{
+        height:92vh;
+        overflow: scroll;
+        justify-content: space-between;
         flex-direction: column;
-        gap: 20px;
-        padding: 10px;
     }
-    
+
+    .projects{
+        width: 100%;
+        height: auto;
+    }
+
     .single-projects{
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 10px;
     }
 
-    .project-images{
-        padding: 10px 0;
-        width: 100%;
-        height: auto;
-        left: none;
-        top: 40px;
-    }
-    .project-img{
-        height: auto;
-    }
-    
     .project-img1{
-        height: auto;
-        width: 250px;
-        right: 10px;
-        top: 40px;
+        margin: 10px auto;
     }
 
+    .link-holder{
+        width: 100%;
+        margin: 20px auto;
+    }
 
+    .site-link{
+        padding: 2px;
+    }
+
+    .detls-link{
+        padding: 2px;
+    }
 }

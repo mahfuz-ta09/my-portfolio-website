@@ -45,6 +45,7 @@ const ContactPage = () => {
 
   }
 
+  
   return (
     <div className="contact-holder">
       <div className="contact-head">
