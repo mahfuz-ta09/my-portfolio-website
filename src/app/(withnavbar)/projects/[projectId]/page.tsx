@@ -1,7 +1,7 @@
 import '@/css/Projects/PrejectDetails.css'
 import Link from 'next/link'
 
-// :{params.projectId}
+
 const page = ({ params }: { params: { projectId: string } }) => {
 
   return (

@@ -37,7 +37,7 @@ const ProjectPage = () => {
                 </div>
                 <div className="link-holder">
                   <Link  href="https://mknglobal.co.uk/" className="site-link"><FontAwesomeIcon className="single-projects-icon" icon={faGlobe} />site</Link>
-                  <button onClick={()=>handleRoute("1")} className="detls-link"><FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} />details</button>
+                  <button onClick={()=>handleRoute("kk")} className="detls-link"><FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} />details</button>
                 </div>
             </div>
             <img className="project-img1" src="/assets/Capture3.png" alt="" />
