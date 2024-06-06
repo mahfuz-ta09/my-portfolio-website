@@ -3,23 +3,24 @@ import { TbBooks } from "react-icons/tb"
 import '@/css/skill&tech/skill&tech.css'
 import { faBootstrap, faCss3, faCss3Alt, faFigma, faGit, faHtml5, faNode, faReact, faSquareJs } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faServer } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 
 const SkillAndTech = () => {
 
   const skills = [
-    { icon: faHtml5, title: 'HTML' },
-    { icon: faCss3Alt, title: 'CSS' },
-    { icon: faBootstrap, title: 'BOOTSTRAP5' },
-    { icon: faCss3, title: 'TAILWIND' },
-    { icon: faSquareJs, title: 'JS' },
-    { icon: faReact, title: 'REACT.js' },
-    { icon: faReact, title: 'NEXT.js' },
-    { icon: faNode, title: 'NODE.js' },
-    { icon: faNode, title: 'EXPRESS.js' },
-    { icon: faServer, title: 'MongoDB' },
-    { icon: faFigma, title: 'Figma' },
-    { icon: faGit, title: 'Git' },
-    { icon: faCode, title: 'C++' },
+    { icon: "/assets/html.webp", title: 'HTML' },
+    { icon: "/assets/css.svg.png", title: 'CSS' },
+    { icon: "/assets/bootstrap1.svg.png", title: 'BOOTSTRAP5' },
+    { icon: "/assets/tailwind.png", title: 'TAILWIND' },
+    { icon: "/assets/js.png", title: 'JS' },
+    { icon: "/assets/firebase.png", title: 'Firebase' },
+    { icon: "/assets/react.png", title: 'REACT.js' },
+    { icon: "/assets/next-js.svg", title: 'NEXT.js' },
+    { icon: "/assets/nodejs.png", title: 'NODE.js' },
+    { icon: "/assets/express.png", title: 'EXPRESS.js' },
+    { icon: "/assets/mngo.png", title: 'MongoDB' },
+    { icon: "/assets/git.png", title: 'Git' },
+    { icon: "/assets/cpp.svg.png", title: 'C++' },
   ];
 
   return (
@@ -31,11 +32,11 @@ const SkillAndTech = () => {
         <div className="skills">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index}>
-              <FontAwesomeIcon className="skill-icon" icon={skill.icon} />
+              <Image src={skill.icon} height={100} width={100} alt="" />
               <h3 className="skill-card-title">{skill.title}</h3>
             </div>
           ))}
-    </div>
+        </div>
     </div>
   )
 }

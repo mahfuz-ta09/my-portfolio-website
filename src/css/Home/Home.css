@@ -85,8 +85,8 @@
     margin-left: -90px;
     margin-bottom: -180px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.45);
     border-radius: 16px;
+    background: rgba(0, 0, 0, 0.45);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.1px);
     -webkit-backdrop-filter: blur(11.1px);
@@ -111,6 +111,7 @@
     position: relative;
 }
 
+
 .hero-tag h1::before{
     content: attr(data-text);
     position:absolute;
@@ -122,6 +123,7 @@
     filter: drop-shadow(0 0 20px #fff);
     color: #fff;
 }
+
 
 @keyframes animate {
     0%,10%,100%{
@@ -195,8 +197,9 @@
 }
 
 .small-det:hover{
-    transition: .2s ease-in-out;
+    transition: .2s ease-in;
     transform: scale(1.1,1.1);
+    box-shadow: 0 10px 40px 0 rgb(180, 177, 177);
 }
 
 .small-det:hover .small-icon{

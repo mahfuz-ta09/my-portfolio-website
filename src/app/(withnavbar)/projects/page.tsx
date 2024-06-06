@@ -27,7 +27,7 @@ const ProjectPage = () => {
           <div className="single-projects">
             <div className="details">
                 <div className="detail">
-                  <h1>MKN Global Consultant</h1>
+                  <h1 className="detail-tag" data-text="MKN Global Consultant">MKN Global Consultant</h1>
                   <p>
                     The system, designed for a consultancy firm, aids students and workers in understanding the 
                     visa procedure. It allows users to send emails and access detailed procedural information, 
