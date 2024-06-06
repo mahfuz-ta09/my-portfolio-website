@@ -1,8 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { TbBooks } from "react-icons/tb"
 import '@/css/skill&tech/skill&tech.css'
-import { faBootstrap, faCss3, faCss3Alt, faFigma, faGit, faHtml5, faNode, faReact, faSquareJs } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faServer } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 
 const SkillAndTech = () => {
