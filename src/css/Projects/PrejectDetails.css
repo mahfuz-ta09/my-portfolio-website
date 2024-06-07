@@ -172,11 +172,26 @@
     font-size: 25px;
 }
 
+/* @media screen and (max-width:850px) {
+    .content-img{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+    }
+    
+} */
 @media screen and (max-width:450px) {
     .project-detail-holder{
         height: 90vh;
         padding: 5px;
     }
+
+    .content-img{
+        width: 100%;
+        height: 50vh;
+        border-radius: 15px;
+    }
+    
 
     .content-link-btn{
         gap: 10px;

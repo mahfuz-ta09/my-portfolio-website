@@ -428,6 +428,8 @@
     }
     .small-details{
         margin-top: 30px;
+        align-items: start;
+        justify-content: start;
     }
     .hero{
         flex-direction: column;
