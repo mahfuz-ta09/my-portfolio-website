@@ -125,6 +125,7 @@
     .skill-container{
         height: 92vh;
         overflow-y: scroll;
+        scrollbar-width: thin;
     }
     
     .skill-container{

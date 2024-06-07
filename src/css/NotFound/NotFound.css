@@ -1,0 +1,35 @@
+.notfound-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to top,rgba(48, 139, 139,0.8),rgba(0,0,0,0.3)),url('../../../public/assets/books.webp');
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+
+.notfound-container h2{
+    font-size: 35px;
+    color: white;
+    font-weight: 800;
+}
+
+.notfound-container  p{
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+}
+
+.btn-home{
+    padding: 8px 29px;
+    color: white;
+    background:teal;
+    margin: 30px 0;
+    font-weight: 700;
+    border-radius: 2px;
+}
