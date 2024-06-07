@@ -212,6 +212,7 @@
     .projects-holder{
         height:92vh;
         overflow: scroll;
+        scrollbar-width: none;
         justify-content: space-between;
         flex-direction: column;
     }
