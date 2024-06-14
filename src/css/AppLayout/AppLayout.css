@@ -96,7 +96,6 @@
     .circle-2{
         right: 0px;
         bottom: 0;
-        
     }
 
 }
@@ -125,7 +124,7 @@
         bottom: 0;
         left: 0;
         z-index: 99;
-        background: #000;
+        background: teal;
     }
     
     .childCnt{
