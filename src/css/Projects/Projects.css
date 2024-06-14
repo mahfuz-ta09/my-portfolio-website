@@ -196,6 +196,7 @@
     .projects{
         width: 100%;
         height: auto;
+        margin-bottom:9vh;
     }
     
     .detail-tag{
@@ -210,8 +211,6 @@
 
 @media screen and (max-width:450px) {
     .projects-holder{
-        height:92vh;
-        overflow: scroll;
         scrollbar-width: none;
         justify-content: space-between;
         flex-direction: column;
