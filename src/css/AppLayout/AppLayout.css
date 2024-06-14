@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-image: linear-gradient(to right top, #a1a1a1, #9d9ea2, #979ca2, #909aa2, #8799a1);
     position: relative;
     overflow:hidden;
