@@ -1,6 +1,5 @@
 .education-container{
     width: 100%;
-    padding: 10px;
 }
 
 .education-head{
@@ -16,7 +15,7 @@
 }
 
 .education-head h1{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .eduLan{
@@ -126,7 +125,6 @@
         gap: 20px;
         margin-top: 0px;
     }
-    
 }
 
 @media screen and (max-width:450px) {

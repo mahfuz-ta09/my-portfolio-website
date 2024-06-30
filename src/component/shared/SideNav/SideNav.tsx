@@ -19,7 +19,7 @@ const SideNav = () => {
     const navRef = useRef<HTMLDivElement>(null)
     const pathName = usePathname()
 
-    console.log(pathName)
+
 
     useEffect(()=>{
         document.addEventListener('mousedown', handleClickOutside);

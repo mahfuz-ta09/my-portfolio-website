@@ -164,12 +164,13 @@
 @media screen and (max-width:450px) {
     .nav-container{
         padding: 10px 5px;
-        width: 50%;
+        width: 60%;
         height: 100dvh;
-        border: none;
+        border-right: 3px solid #fff;
         position: fixed;
         bottom: 0;
         top: 0;
+        opacity: 0.9;
         z-index: 99;
         background: teal;
     }
@@ -187,9 +188,9 @@
     .nav-controller{
         display: block;
         position: fixed;
-        right:  10px;
-        top: 10px;
-        font-size: 30px;
+        right:10px;
+        top:  25px;
+        font-size: 25px;
     }
 
     .nav-body ul{
