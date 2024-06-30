@@ -212,9 +212,6 @@
     color: white;
 }
 
-.cv-checker{
-    display: none;
-}
 
 @media screen and (max-width:1370px) {
     .home-content{
@@ -406,15 +403,6 @@
         margin-top: 0px;
     }
     
-    .cv-checker{
-        padding: 5px 10px;
-        width: 100%;
-        background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        flex-direction: column-reverse;
-    }
 
 }
 
@@ -440,9 +428,5 @@
         color: rgb(126, 124, 124);
         position: relative;
     }
-    
-    
-    .cv-checker{
-        padding: 10px;
-    }
+
 }

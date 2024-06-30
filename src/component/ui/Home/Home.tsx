@@ -61,14 +61,6 @@ const Home = () => {
         </div>
         
       </div>
-
-      <div className="cv-checker">
-            <div className='cv-hlder'>
-                <BiLinkAlt className='cv-icon'/>
-                <Link className='cv-link' href="https://docs.google.com/document/d/1prqw-uLKuSftJkTJLp0ni8oO8HcpTgohtHbsA276nUY/edit?usp=sharing"> click here</Link>
-            </div>
-            <h1>Check Resume</h1>
-        </div>
     </div>
   )
 }

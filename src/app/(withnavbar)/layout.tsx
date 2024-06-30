@@ -3,7 +3,6 @@ import "@/css/AppLayout/AppLayout.css"
 import { Toaster} from 'sonner'
 
 
-
 const layout = ({children} : {children: React.ReactNode}) => {
   return (
     <div className="app-holder">
@@ -11,9 +10,9 @@ const layout = ({children} : {children: React.ReactNode}) => {
         <div className="circle-2"></div>
         <div className="circle-3"></div>
         <div className="window">
-          <div className="nav">
+          {/* <div className="nav"> */}
             <SideNav />
-          </div>
+          {/* </div> */}
           <div className="childCnt">
             {children}
           </div>

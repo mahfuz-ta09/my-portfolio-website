@@ -1,17 +1,22 @@
+"use client"
 import '@/css/SideNav/SideNav.css'
 import Link from 'next/link'
-import { FaHome } from "react-icons/fa"
+import { FaBars, FaHome } from "react-icons/fa"
 import { FaMobile } from "react-icons/fa"
 import { FaCrop } from "react-icons/fa"
 import { FaQuidditch } from "react-icons/fa"
 import { FaRegFilePdf } from "react-icons/fa"
 import { BsFillMortarboardFill } from "react-icons/bs"
 import { BiLinkAlt } from "react-icons/bi"
+import { useState } from 'react'
+import { RxCrossCircled } from 'react-icons/rx'
+
 
 
 const SideNav = () => {
+    const [isOpen,setIsopen] = useState(true)
   return (
-    <div className="nav-container">
+    <div className={isOpen? "nav-container open":"nav-container close"}>
         <div className="nav-header">
             <div className='pic'>
                 <h1>Full stack</h1>
@@ -37,6 +42,7 @@ const SideNav = () => {
             </div>
             <h1>Check Resume</h1>
         </div>
+        <button onClick={()=>setIsopen(!isOpen)} className='nav-controller'>{isOpen ? <RxCrossCircled  />: <FaBars />}</button>
     </div>
   )
 }
