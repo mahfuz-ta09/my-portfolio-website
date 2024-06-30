@@ -60,7 +60,7 @@ const SideNav = () => {
                 </div>
                 <h1>Check Resume</h1>
             </div>
-            <button onClick={()=>setIsopen(!isOpen)} className='nav-controller'>{isOpen ? "" : <FaBars />}</button>
+            <button onClick={()=>setIsopen(!isOpen)} className={isOpen ? 'btn-close' :'nav-controller'}>{isOpen ? "" : <FaBars />}</button>
         </div>
     )
 }

@@ -10,6 +10,7 @@ import { BiLinkAlt } from "react-icons/bi"
 import Link from "next/link"
 
 
+
 const Home = () => {
   return (
     <div className="home-content">
