@@ -89,7 +89,7 @@ form {
     width: 100%;
 }
 
-button {
+.submit-btn{
   padding: 10px;
   width: 40%;
   margin: 15px auto;
@@ -103,7 +103,7 @@ button {
   
 }
 
-button:hover {
+.submit-btn:hover {
   transition: .3s ease-in-out;
   background-color: rgb(56, 212, 212);
 }
