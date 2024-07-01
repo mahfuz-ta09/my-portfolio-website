@@ -123,7 +123,7 @@
 
 @media screen and (max-width:500px) {
     .skill-container{
-        margin-bottom:9vh;
+        /* margin-bottom:9vh; */
     }
     
     .skill-container{
@@ -138,7 +138,7 @@
 
 @media screen and (max-width:375px) {    
     .skill-container{
-        margin-bottom:9vh;
+        /* margin-bottom:9vh; */
     }
 
     .skills{
