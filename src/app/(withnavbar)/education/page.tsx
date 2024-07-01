@@ -9,7 +9,7 @@ const EducationPage = () => {
     <div className="education-container">
       <div className="education-head">
         <FontAwesomeIcon className="education-head-icon" icon={faBookAtlas}/>
-        <h1>Education And Language</h1>
+        <h1>Education</h1>
       </div>
 
       <div className="eduLan">

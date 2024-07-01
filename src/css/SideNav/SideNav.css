@@ -170,7 +170,6 @@
         position: fixed;
         bottom: 0;
         top: 0;
-        opacity: 0.9;
         z-index: 99;
         background: teal;
     }
@@ -189,7 +188,7 @@
         display: block;
         position: fixed;
         right:20px;
-        top:  85%;
+        top:  20px;
         font-size: 20px;
         color: white;
         background: #000;
