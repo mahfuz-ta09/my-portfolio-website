@@ -319,12 +319,17 @@
         width: 100%;
         display: flex;
         align-items: start;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
+        flex-direction: row;
         margin-bottom: 0px;
         padding: 10px;
     }
-
+    .mail-item h1{
+        font-size: 16px;
+    }
+    .mail-item-logo{
+        font-size: 16px;
+    }
     .socio-item{
         display: flex;
         align-items: center;
@@ -333,7 +338,7 @@
     }
     
     .socio-item-link{
-        font-size: 25px;
+        font-size: 18px;
         color: rgb(0, 0, 0);
     }
 
@@ -375,14 +380,14 @@
     }
 
     .hero-tag h1{
-        font-size: 28px;
+        font-size: 20px;
         line-height: 32px;
         font-weight: 500;
     }
 
     
     .hero-tag p{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 18px;
         font-weight: 300;
     }
@@ -390,8 +395,8 @@
     
     .hero-des{
         font-size: 15px;
-        line-height: 15px;
-        font-weight: 600;
+        line-height: 16px;
+        font-weight: 300;
         text-align: justify;
         color: white;
         padding-top: 10px;
@@ -402,17 +407,21 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: start;
         margin-top: 0px;
     }
     
+    .small-details  h1{
+        font-size: 20px;
+        padding: 30px 0 10px 0;
+    }
 
 }
 
 
 @media screen and (max-width:380px) {
-    .home-content{
+    /* .home-content{
         gap: 20px;
         scrollbar-width: none;
     }
@@ -431,6 +440,6 @@
         font-weight: 700;
         color: rgb(126, 124, 124);
         position: relative;
-    }
+    } */
 
 }
