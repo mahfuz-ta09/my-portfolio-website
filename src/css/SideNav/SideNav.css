@@ -166,7 +166,7 @@
     .nav-container{
         padding: 10px 50px;
         width: 80%;
-        height: 100dvh;
+        height: 100%;
         border-right: none;
         border-bottom: 3px solid #fff;
         position: fixed;
@@ -190,8 +190,8 @@
     .nav-controller{
         display: block;
         position: fixed;
-        right:20px;
-        bottom:  20px;
+        right: 20px;
+        bottom:10dvh;
         font-size: 15px;
         color: black;
         border: 3px solid black;
