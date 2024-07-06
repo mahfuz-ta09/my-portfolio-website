@@ -165,8 +165,8 @@
 @media screen and (max-width:450px) {
     .nav-container{
         padding: 10px 50px;
-        width: 100%;
-        height: 60vh;
+        width: 80%;
+        height: 100dvh;
         border-right: none;
         border-bottom: 3px solid #fff;
         position: fixed;
@@ -191,7 +191,7 @@
         display: block;
         position: fixed;
         right:20px;
-        top:  20px;
+        bottom:  20px;
         font-size: 15px;
         color: black;
         border: 3px solid black;
