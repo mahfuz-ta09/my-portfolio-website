@@ -16,7 +16,6 @@ const ProjectPage = () => {
 
   return (
     <div className="projects-holder">
-      
       <div className="project-head">
         <FontAwesomeIcon className="project-icon" icon={faFile} />
         <h1>Projects</h1>
