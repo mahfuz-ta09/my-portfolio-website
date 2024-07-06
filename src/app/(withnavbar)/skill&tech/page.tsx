@@ -29,7 +29,7 @@ const SkillAndTech = () => {
         <div className="skills">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index}>
-              <Image src={skill.icon} height={100} width={100} alt="" />
+              <Image src={skill.icon} height={70} width={70} alt="" />
               <h3 className="skill-card-title">{skill.title}</h3>
             </div>
           ))}

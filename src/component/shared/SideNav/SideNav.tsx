@@ -15,7 +15,7 @@ import { usePathname } from 'next/navigation'
 
 
 const SideNav = () => {
-    const [isOpen,setIsopen] = useState(true)
+    const [isOpen,setIsopen] = useState(false)
     const navRef = useRef<HTMLDivElement>(null)
     const pathName = usePathname()
 

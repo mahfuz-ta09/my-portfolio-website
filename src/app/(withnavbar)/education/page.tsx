@@ -13,6 +13,7 @@ const EducationPage = () => {
       </div>
 
       <div className="eduLan">
+        
         <div className="edu">
           <h1>Education</h1>
           <div className="edu-details">
@@ -28,6 +29,7 @@ const EducationPage = () => {
               <h1>Sylhet, Bangladesh</h1>
           </div>
         </div>
+        
         <div className="lan">
           <h1>Language</h1>
           <div className="lan-det">
