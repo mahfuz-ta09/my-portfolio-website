@@ -22,15 +22,15 @@
 
 .name{
     display: flex;
-    align-items: end;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 .pic{
     display: flex;
-    align-items: end;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -41,17 +41,18 @@
 }
 
 .pic p{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 .pic h1{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
 }
 
 
 .name h1{
     font-weight: 400;
+    font-size: 20px;
 }
 
 .nav-body{
@@ -75,7 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
+    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(0, 0, 0, 0.2));
     clip-path: polygon(0 0,100% 0px,90% 100%,0% 100%);
     padding: 10px;
 }
@@ -87,25 +88,25 @@
 
 .icon{
     color: black;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .liink{
     color: black;
-    font-size: 20px;
-    padding-left: 30px;
+    font-size: 18px;
+    padding-left: 18px;
     /* font-weight: 700; */
 }
 
 .link-container:hover .icon{
     color: rgb(12, 54, 54);
-    font-size: 27px;
+    font-size: 20px;
     transition: .2s ease-in-out;
 }
 
 .link-container:hover .liink{
     color: rgb(12, 54, 54);
-    font-size: 22px;
+    font-size: 20px;
     transition: .2s ease-in-out;
 }
 
@@ -114,7 +115,7 @@
     padding: 0px;
     background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
@@ -129,7 +130,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 
 .cv-icon{

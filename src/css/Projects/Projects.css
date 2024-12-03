@@ -152,10 +152,11 @@
     flex: 1;
     width: 250px;
     height: 350px;
+    object-fit:contain;
 }
 
 .link-holder{
-    width: 70%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -186,10 +187,11 @@
     justify-content: center;
     gap: 10px;
     font-size: 18px;
-    padding: 7px;
+    padding: 4px;
     font-weight: 300;
     color: teal;
     box-shadow: 0 10px 40px 0 black;
+    border-radius: 4px;
 }
 
 .detls-link{
@@ -202,10 +204,11 @@
     justify-content: center;
     gap: 10px;
     font-size: 18px;
-    padding: 7px;
+    padding: 4px;
     font-weight: 300;
     color: teal;
     box-shadow: 0 10px 40px 0 black;
+    border-radius: 4px;
 }
 
 .site-link:hover{
@@ -269,7 +272,7 @@
 
     .detail{
         width: 100%;
-        padding: 5px;
+        padding: 15px;
     }
 
     .detail-tag{
@@ -286,10 +289,13 @@
 
     .project-img1{
         margin: 10px auto;
+        height: 250px;
+        width: 250px;
+        object-fit: contain;
     }
 
     .link-holder{
-        width: 100%;
+        width: 90%;
         margin: 20px auto;
         gap:40px;
     }
