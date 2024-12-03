@@ -12,7 +12,7 @@ const page = ({ params }: { params: { projectId: string } }) => {
 
       <div className="main-content">
         
-        <img className='content-img' src='/assets/Capture.png' alt='Banner Image'/>
+        <img className='content-img' src="https://i.ibb.co.com/JBXNHjj/Capture.png" alt="Capture" />
         <div className='content-link-btn'>
             <Link href="" className='content-lnk'><FontAwesomeIcon className='btn-icon' icon={faMobileScreen}/>Frontend</Link>
             <Link href="" className='content-lnk'><FontAwesomeIcon className='btn-icon' icon={faServer}/>Backend</Link>

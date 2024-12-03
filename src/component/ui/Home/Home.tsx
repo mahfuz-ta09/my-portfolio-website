@@ -28,7 +28,8 @@ const Home = () => {
 
       <div className="home-element">
         <div className="hero">
-          <img className="profile-pic" src='/assets/myppic.jpg' alt="My Photo"/>
+        {/* <img src="https://i.ibb.co.com/gSLHLg8/file.png" alt="file" border="0" /> */}
+          <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" className="profile-pic" alt="myppic"/>
           <div className="hero-details">
             <div className="hero-tag">
               <p>Hello, I am</p>
@@ -67,3 +68,23 @@ const Home = () => {
 }
 
 export default Home
+
+{/* <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="myppic" border="0">
+<img src="https://i.ibb.co.com/gSLHLg8/file.png" alt="file" border="0">
+<img src="https://i.ibb.co.com/yN0nYww/books.webp" alt="books" border="0">
+<img src="https://i.ibb.co.com/nLYJ048/bootstrap1-svg.png" alt="bootstrap1-svg" border="0">
+<img src="https://i.ibb.co.com/JBXNHjj/Capture.png" alt="Capture" border="0">
+<img src="https://i.ibb.co.com/kHWhfwm/Capture1.png" alt="Capture1" border="0">
+<img src="https://i.ibb.co.com/1TKrF6c/Capture3.png" alt="Capture3" border="0">
+<img src="https://i.ibb.co.com/WBLQGkT/cpp-svg.png" alt="cpp-svg" border="0">
+<img src="https://i.ibb.co.com/JmFs1FS/css-svg.png" alt="css-svg" border="0">
+<img src="https://i.ibb.co.com/4tF0ppm/express.png" alt="express" border="0">
+<img src="https://i.ibb.co.com/9sqQSNR/firebase.png" alt="firebase" border="0">
+<img src="https://i.ibb.co.com/K7QvKWH/git.png" alt="git" border="0">
+<img src="https://i.ibb.co.com/rZsQ4my/html.webp" alt="html" border="0">
+<img src="https://i.ibb.co.com/BrDP8Xk/js.png" alt="js" border="0">
+<img src="https://i.ibb.co.com/VgZ9gVQ/mngo.png" alt="mngo" border="0">
+<img src="https://i.ibb.co.com/j4fm40w/mongo.jpg" alt="mongo" border="0">
+<img src="https://i.ibb.co.com/z5RqxjD/nodejs.png" alt="nodejs" border="0">
+<img src="https://i.ibb.co.com/TqsqWt9/react.png" alt="react" border="0">
+<img src="https://i.ibb.co.com/HLyygZZ/tailwind.png" alt="tailwind" border="0"></img> */}

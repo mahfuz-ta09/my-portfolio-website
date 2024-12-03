@@ -5,21 +5,14 @@ import Image from 'next/image'
 const SkillAndTech = () => {
 
   const skills = [
-    { icon: "/assets/html.webp", title: 'HTML' },
-    { icon: "/assets/css.svg.png", title: 'CSS' },
-    { icon: "/assets/bootstrap1.svg.png", title: 'BOOTSTRAP5' },
-    { icon: "/assets/tailwind.png", title: 'TAILWIND' },
-    { icon: "/assets/js.png", title: 'JS' },
-    { icon: "/assets/firebase.png", title: 'Firebase' },
-    { icon: "/assets/react.png", title: 'REACT.js' },
+    { icon: "https://i.ibb.co.com/TqsqWt9/react.png", title: 'REACT.js' },
     { icon: "/assets/next-js.svg", title: 'NEXT.js' },
-    { icon: "/assets/nodejs.png", title: 'NODE.js' },
-    { icon: "/assets/express.png", title: 'EXPRESS.js' },
-    { icon: "/assets/mngo.png", title: 'MongoDB' },
-    { icon: "/assets/git.png", title: 'Git' },
-    { icon: "/assets/cpp.svg.png", title: 'C++' },
-  ];
-
+    { icon: "https://i.ibb.co.com/z5RqxjD/nodejs.png", title: 'NODE.js' },
+    { icon: "https://i.ibb.co.com/4tF0ppm/express.png", title: 'EXPRESS.js' },
+    { icon: "https://i.ibb.co.com/VgZ9gVQ/mngo.png", title: 'MongoDB' },
+    { icon: "https://i.ibb.co.com/WBLQGkT/cpp-svg.png", title: 'C++' },
+  ]
+  const otherSkills = ['HTML', 'CSS', 'BOOTSTRAP5', 'TAILWIND', 'JS', 'Firebase', 'Git','Redux']
   return (
     <div className="skill-container">
         <div className="skill-title">
@@ -29,11 +22,19 @@ const SkillAndTech = () => {
         <div className="skills">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index}>
-              <Image src={skill.icon} height={70} width={70} alt="" />
+              <Image src={skill.icon} height={70} width={70} alt={skill.title} />
               <h3 className="skill-card-title">{skill.title}</h3>
             </div>
           ))}
         </div>
+        
+        <div className="expertise-container">
+            <h1 className="expertise-title">Other Fields of Expertise:</h1>
+            <p className="expertise-list">
+                {otherSkills.join(', ')}
+            </p>
+        </div>
+
     </div>
   )
 }

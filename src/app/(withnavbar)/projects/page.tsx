@@ -39,7 +39,7 @@ const ProjectPage = () => {
                   <button onClick={()=>handleRoute("kk")} className="detls-link"><FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} />details</button>
                 </div>
             </div>
-            <img className="project-img1" src="/assets/Capture3.png" alt="" />
+            <img className="project-img1" src="https://i.ibb.co.com/1TKrF6c/Capture3.png" alt="Capture3"/>
           </div>
 
 
