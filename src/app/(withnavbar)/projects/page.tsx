@@ -17,8 +17,14 @@ const ProjectPage = () => {
   return (
     <div className="projects-holder">
       <div className="project-head">
-        <FontAwesomeIcon className="project-icon" icon={faFile} />
-        <h1>Projects</h1>
+        <div className="project-head-title">
+          <FontAwesomeIcon className="project-icon" icon={faFile} />
+          <h1>Projects</h1>
+        </div>
+        <div className="project-navigation">
+          <button className="project-navigation-btn">next</button>
+          <button className="project-navigation-btn">prev</button>
+        </div>
       </div>
 
       <div className="projects">

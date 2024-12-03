@@ -12,8 +12,35 @@
     align-items: center;
     justify-content: start;
     width: 100%;
-    padding: 15px;
-    gap: 20px;
+    padding: 10px;
+}
+
+.project-head-title{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.project-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.project-navigation-btn{
+    font-size: 16px;
+    border: .5px solid black;
+    color: black;
+    padding: 4px 20px;
+    border-radius: 3px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.project-navigation-btn:hover{
+    scale: .9;
 }
 
 .project-head h1{
@@ -158,9 +185,9 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 7px;
-    font-weight: 700;
+    font-weight: 300;
     color: teal;
     box-shadow: 0 10px 40px 0 black;
 }
@@ -174,21 +201,21 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 7px;
-    font-weight: 700;
+    font-weight: 300;
     color: teal;
     box-shadow: 0 10px 40px 0 black;
 }
 
 .site-link:hover{
     transition: .4s ease-out;
-    transform: scale(1.05);
+    transform: scale(.9);
 }
 
 .detls-link:hover{
     transition: .4s ease-out;
-    transform: scale(1.05);
+    transform: scale(.9);
 }
 
 
@@ -279,5 +306,10 @@
         font-size: 18px;
         font-weight: 300;
         box-shadow: 0 10px 30px 0 black;
+    }
+
+    .project-navigation-btn{
+        width: 65px;
+        font-size: 13px;
     }
 }
