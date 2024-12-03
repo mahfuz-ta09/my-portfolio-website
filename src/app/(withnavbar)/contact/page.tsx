@@ -55,8 +55,8 @@ const ContactPage = () => {
       </div>
 
       <div className="form-container">
-        
         <form onSubmit={handleSubmit(onSubmit)}>
+        <h1 className='form-container-header'>Get in Touch</h1>
           <div className='name-secton'>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -96,6 +96,7 @@ const ContactPage = () => {
           <h1><TbPhone className="mail-item-logo"/>+88 01871314063</h1>
           <h1><TbPhone className="mail-item-logo"/>+88 01700502013</h1>
           <h1><TbMailFilled className="mail-item-logo"/>mahfuz.ta09@gmail.com</h1>
+          <p>I'm always open to discussing new projects or answering any questions you might have.</p>
         </div>  
 
 

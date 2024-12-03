@@ -16,8 +16,8 @@ const Home = () => {
     <div className="home-content">
         <div className="link-icon">
           <div className="mail-item">
-            <TbMailFilled className="mail-item-logo"/>
-            <h1>mahfuz.ta09@gmail.com</h1>
+            {/* <TbMailFilled className="mail-item-logo"/>
+            <h1>mahfuz.ta09@gmail.com</h1> */}
           </div>
           <div className="socio-item">
             {/* <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link> */}
