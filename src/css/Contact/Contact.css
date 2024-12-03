@@ -18,33 +18,56 @@
 .form-container {
   padding: 20px;
   border-radius: 8px;
-  width: 50%;
+  width: 100%;
   margin: 5vh auto;
   border-radius: 16px;
-  background: rgba(0, 0, 0, 0.45);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11.1px);
-  -webkit-backdrop-filter: blur(11.1px);
-  border: 1px solid rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 
 form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  width: 80%;
+  min-height: 350px;
 }
 
+
+.contact-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 20px;
+  width: 80%;
+  border-left: 3px solid teal;
+  height: 350px;
+}
+
+.contact-list h1{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  color: white;
+}
 
 .name-secton{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
   font-weight: 400;
   color: white;
+  font-size: 15px;
 }
 
 .email-section{
@@ -52,18 +75,19 @@ form {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
-  margin-top: 25px;
+  margin-top: 5px;
   font-weight: 400;
   color: white;
+  font-size: 15px;
 }
 
 
 .form-text{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 5px;
     font-weight: 400;
     color: white;
+    font-size: 15px;
 }
 
 .name-input{
@@ -71,7 +95,6 @@ form {
     padding: 4px;
     border: 2px solid #ccc;
     border-radius: 6px;
-    background: teal;
 }
 
 .text-input{
@@ -80,7 +103,6 @@ form {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: teal;
 }
 
 .form-group{
@@ -89,12 +111,12 @@ form {
 
 .submit-btn{
   padding: 10px;
-  width: 40%;
+  width: 30%;
   margin: 15px auto;
   border: none;
   background-color: white;
   color: teal;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
@@ -170,9 +192,19 @@ form {
     border-radius: 8px;
     width: 95%;
     margin: 10vh auto 0;
+    flex-direction: column-reverse;
+  }
+  .contact-list {
+    border-left: none;
+    border-bottom: 3px solid teal;
+    text-align: start;
+    align-items: center;
   }
   
-  
+  .contact-list h1{
+    font-size: 16px;
+  }
+
   .name-secton{
     flex-direction: column;
     width: 100%;

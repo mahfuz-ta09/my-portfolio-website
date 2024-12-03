@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useForm, SubmitHandler } from "react-hook-form"
 import emailjs from '@emailjs/browser'
 import { toast } from 'sonner'
+import { TbMailFilled, TbPhone } from 'react-icons/tb'
 
 type Inputs = {
   first_name: string
@@ -54,6 +55,7 @@ const ContactPage = () => {
       </div>
 
       <div className="form-container">
+        
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className='name-secton'>
             <div className="form-group">
@@ -89,6 +91,14 @@ const ContactPage = () => {
             </div>
           <button className='submit-btn' type="submit">Submit</button>
         </form>
+
+        <div className='contact-list'>
+          <h1><TbPhone className="mail-item-logo"/>+88 01871314063</h1>
+          <h1><TbPhone className="mail-item-logo"/>+88 01700502013</h1>
+          <h1><TbMailFilled className="mail-item-logo"/>mahfuz.ta09@gmail.com</h1>
+        </div>  
+
+
       </div>
     </div>
   )

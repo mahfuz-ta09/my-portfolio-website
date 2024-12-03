@@ -3,7 +3,6 @@ import '@/css/skill&tech/skill&tech.css'
 import Image from 'next/image'
 
 const SkillAndTech = () => {
-
   const skills = [
     { icon: "https://i.ibb.co.com/TqsqWt9/react.png", title: 'REACT.js' },
     { icon: "/assets/next-js.svg", title: 'NEXT.js' },
@@ -13,6 +12,8 @@ const SkillAndTech = () => {
     { icon: "https://i.ibb.co.com/WBLQGkT/cpp-svg.png", title: 'C++' },
   ]
   const otherSkills = ['HTML', 'CSS', 'BOOTSTRAP5', 'TAILWIND', 'JS', 'Firebase', 'Git','Redux']
+
+
   return (
     <div className="skill-container">
         <div className="skill-title">
