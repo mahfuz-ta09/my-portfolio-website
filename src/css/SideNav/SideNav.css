@@ -1,170 +1,99 @@
 .nav-container{
-    padding: 5px;
-    width: 300px;
-    height: 100%;
-    border-right: 2px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.nav-header{
-    height: 10vh;
-    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
-}
-
-.name{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1999;
 }
 
-.pic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-
-.profile{
-    font-size: 45px;
-    color: teal;
-}
-
-.pic p{
-    /* font-size: 25px; */
-}
-
-.pic h1{
-    font-size: 15px;
-    font-weight: 400;
-}
-
-
-.name h1{
-    font-weight: 400;
-    font-size: 20px;
-}
 
 .nav-body{
-    height: 60vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .nav-body ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 5% 100%);
 }
 
 .link-container{
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
-    /* background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(0, 0, 0, 0.2)); */
-    /* clip-path: polygon(0 0,100% 0px,90% 100%,0% 100%); */
-    padding: 7px;
+    justify-content: center;
     cursor: pointer;
+    background: black;
+    padding: 5px 25px;
+    gap: 2px;
 }
 .active{
-    border-left: 4px solid black;
+    border-bottom: 2px solid rgb(40, 255, 255);
 }
 
 
 .icon{
-    color: black;
+    color:  rgb(40, 255, 255);
     font-size: 18px;
 }
 
 .liink{
-    color: black;
+    color: rgb(40, 255, 255);
     font-size: 18px;
-    padding-left: 18px;
-}
-
-
-.nav-footer{
-    height: 10vh;
-    padding: 0px;
-    background: linear-gradient(to bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.9));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.nav-footer h1{
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.cv-hlder{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cv-icon{
-    font-size: 20px;
-    color: black;
-    font-weight: 900;
-}
-
-.cv-link{
-    font-size: 15px;
-    color: black;
-    font-weight: 900;
-}
-
-.cv-link:hover{
-    color: teal;
-    font-size: 17px;
-    transition: .2s ease-in-out;
-}
-.nav-controller{
-    display: none;
 }
 
 
 @media screen and (max-width:450px) {
     .nav-container{
-        padding: 10px 50px;
-        width: 80%;
-        height: 100%;
-        border-right: 2px solid #fff;
+        width: 100%;
+        height: 7vh;
         position: fixed;
         left: 0;
-        top: 0;
         bottom: 0;
-        z-index: 99;
-        box-shadow: 0px 10px 10px #000;
-        background: rgb(0, 48, 48);
+        right: 0;
+        z-index: 1999;
+    }
+    .nav-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
 
-    .nav-container.open{
-        left: 0%;
-        transition: .5s ease-in-out;
+    .nav-body ul{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        clip-path: unset;
     }
 
-    .nav-container.close{
-        left: -100%;
-        transition: .5s ease-in-out;
+    .link-container{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: black;
+        clip-path: unset;
     }
+
+    .icon{
+        color: rgb(40, 255, 255);
+        font-size: 18px;
+    }
+
+
 
     .nav-controller{
         display: block;
@@ -179,61 +108,11 @@
         border-radius: 50%;
     }
 
-    .nav-header{
-        background:  rgb(0, 48, 48);
-        color: white;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .name{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .pic{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    
 
-    .btn-close{
-        display: none;
-    }
-    .nav-body ul{
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .link-container{
-        width: 170px;
-        margin: 0 auto;
-        height:40px;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        background:  rgb(0, 48, 48);
-        clip-path: unset;
-        padding: 5px 10px ;
-    }
-
-    .icon{
-        color: white;
-        font-size: 18px;
-    }
     
     .liink{
-        color: white;
-        font-size: 18px;
-        padding-left: 30px;
-        font-weight: 700;
+        display: none;
     }
     .link-container:hover .icon{
         color: white;
@@ -241,11 +120,6 @@
     
     .link-container:hover .liink{
         color: white;
-    }
-    
-    .active{
-        border-bottom: 3px solid white;
-        border-left: unset;
     }
     
     
@@ -256,28 +130,4 @@
     .link-container:hover .liink{
         font-size: 20px;
     }
-
-
-    .pic h1{
-        font-size: 13px;
-        font-weight: 400;
-    }
-    
-    .name h1{
-        font-weight: 600;
-        font-size: 18px;
-    }
-    
-    .nav-footer{
-        align-items: center;
-        background:  rgb(0, 48, 48);
-        color: white;
-    }
-    .cv-icon,.cv-link{
-        color: white;
-    }
-    .cv-hlder{
-        justify-content: center;
-    }
-
 }
