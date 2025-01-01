@@ -1,5 +1,4 @@
 import "@/css/Home/Home.css"
-import { FaFacebook } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { TbMailFilled } from "react-icons/tb"
@@ -14,58 +13,50 @@ import Link from "next/link"
 
 const Home = () => {
   return (
-    <div className="home-content">
-        {/* <div className="link-icon"> */}
-          {/* <div className="mail-item">
-            <TbMailFilled className="mail-item-logo"/>
-            <h1>mahfuz.ta09@gmail.com</h1>
-          </div> */}
-          {/* <div className="socio-item">
-            <Link href="https://www.facebook.com/profile.php?id=100008448583849"><FaFacebook className="socio-item-link" /></Link>
-            <Link href="https://www.linkedin.com/in/ma-tasnim/"><FaLinkedin className="socio-item-link" /></Link>
-            <Link href="https://github.com/mahfuz-ta09"><FaGithub className="socio-item-link"   /></Link>
-          </div> */}
-        {/* </div> */}
-
-      <div className="home-element">
-        <div className="hero">
-        {/* <img src="https://i.ibb.co.com/gSLHLg8/file.png" alt="file" border="0" /> */}
-          <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" className="profile-pic" alt="myppic"/>
-          <div className="hero-details">
+    <div className="home-container">
+      <div className="overlay"></div>
+      <div className="hero">
             <div className="hero-tag">
               <p>Hello, I am</p>
-              <h1 data-text="Md Mahfuz Anam Tasnim">Md Mahfuz Anam Tasnim</h1>
+              <h1>Md Mahfuz Anam Tasnim</h1>
             </div>
-            <h1 className="hero-des">
+            <h3 className="her-des">Full Stack web developer</h3>
+      </div>
+      <div className="img-container">
+        <img src="https://i.ibb.co.com/gSLHLg8/file.png"/>
+      </div>
+
+      <div className="details">
+        <div className="about">
+          <h1 className="title">About</h1>
+          <hr />
+          <p>
               I am a dedicated and practicing MERN stack developer with solid knowledge 
               in different technologies and self-motivated and hardworking for an opportunity to work in a 
               challenging environment to prove my skills and utilize my knowledge in the growth of the organization.
-            </h1>
+          </p>
+        </div>
+        <div className="about">
+          <h1 className="title">Experience</h1>
+          <hr />
+          <p>
+              I am a dedicated and practicing MERN stack developer with solid knowledge 
+              in different technologies and self-motivated and hardworking for an opportunity to work in a 
+              challenging environment to prove my skills and utilize my knowledge in the growth of the organization.
+          </p>
+        </div>
+        <div className="social">
+          <h1 className="title">Social</h1>
+          <hr />
+          <div className="icons">
+            <Link className="socio-lnk" href="/">download cv?</Link>
+            <Link className="socio-lnk" href="/"><TbMailFilled/>mahfuz.ta09@gmail.com</Link>
+            <Link className="socio-lnk" href="/"><FaGithub/> Github</Link>
+            <Link className="socio-lnk" href="/"><FaLinkedin/> Linkedin</Link>
           </div>
         </div>
-
-        {/* <div className="small-details">
-              <h1>What expertise do I bring?</h1>
-              <div className="small-details-holder">
-                  <div className="small-det">
-                    <p  className="small-det-p">optimal</p>
-                    <AiFillFormatPainter className="small-icon"/>
-                    <p  className="small-det-p">DESIGN</p>
-                  </div>
-                  <div className="small-det">
-                    <p  className="small-det-p">smooth web</p>
-                    <IoTabletLandscape className="small-icon"/>
-                    <p  className="small-det-p">EXPERIENCE</p>
-                  </div>
-                  <div className="small-det">
-                    <p  className="small-det-p">maintainable</p>
-                    <AiFillDatabase className="small-icon"/>
-                    <p  className="small-det-p">CODE</p>
-                  </div>
-              </div>
-        </div> */}
-        
       </div>
+
     </div>
   )
 }
@@ -91,3 +82,9 @@ export default Home
 <img src="https://i.ibb.co.com/z5RqxjD/nodejs.png" alt="nodejs" border="0">
 <img src="https://i.ibb.co.com/TqsqWt9/react.png" alt="react" border="0">
 <img src="https://i.ibb.co.com/HLyygZZ/tailwind.png" alt="tailwind" border="0"></img> */}
+
+{/* <h1 className="hero-des">
+              I am a dedicated and practicing MERN stack developer with solid knowledge 
+              in different technologies and self-motivated and hardworking for an opportunity to work in a 
+              challenging environment to prove my skills and utilize my knowledge in the growth of the organization.
+            </h1> */}
