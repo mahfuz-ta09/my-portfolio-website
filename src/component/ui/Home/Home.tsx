@@ -14,7 +14,6 @@ import Link from "next/link"
 const Home = () => {
   return (
     <div className="home-container">
-      <div className="overlay"></div>
       <div className="hero">
             <div className="hero-tag">
               <p>Hello, I am</p>
@@ -23,6 +22,7 @@ const Home = () => {
             <h3 className="her-des">Full Stack web developer</h3>
       </div>
       <div className="img-container">
+        <div className="overlay"></div>
         <img src="https://i.ibb.co.com/gSLHLg8/file.png"/>
       </div>
 
@@ -41,16 +41,15 @@ const Home = () => {
           <hr />
           <p>
               I am a dedicated and practicing MERN stack developer with solid knowledge 
-              in different technologies and self-motivated and hardworking for an opportunity to work in a 
-              challenging environment to prove my skills and utilize my knowledge in the growth of the organization.
+              in different technologies and self-motivated and hardworking for 
           </p>
+          <p><TbMailFilled/>mahfuz.ta09@gmail.com</p>
         </div>
         <div className="social">
           <h1 className="title">Social</h1>
           <hr />
           <div className="icons">
             <Link className="socio-lnk" href="/">download cv?</Link>
-            <Link className="socio-lnk" href="/"><TbMailFilled/>mahfuz.ta09@gmail.com</Link>
             <Link className="socio-lnk" href="/"><FaGithub/> Github</Link>
             <Link className="socio-lnk" href="/"><FaLinkedin/> Linkedin</Link>
           </div>
