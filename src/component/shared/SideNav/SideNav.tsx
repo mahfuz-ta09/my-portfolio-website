@@ -9,7 +9,6 @@ import { BsFillMortarboardFill } from "react-icons/bs"
 import { usePathname } from 'next/navigation'
 
 
-
 const SideNav = () => {
     const pathName = usePathname()
 

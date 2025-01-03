@@ -36,14 +36,12 @@ const Home = () => {
               challenging environment to prove my skills and utilize my knowledge in the growth of the organization.
           </p>
         </div>
-        <div className="about">
+        <div className="experience">
           <h1 className="title">Experience</h1>
           <hr />
-          <p>
-              I am a dedicated and practicing MERN stack developer with solid knowledge 
-              in different technologies and self-motivated and hardworking for 
+          <p> 
           </p>
-          <p><TbMailFilled/>mahfuz.ta09@gmail.com</p>
+          <p className="email"><TbMailFilled/>mahfuz.ta09@gmail.com</p>
         </div>
         <div className="social">
           <h1 className="title">Social</h1>

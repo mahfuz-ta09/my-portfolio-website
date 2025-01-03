@@ -48,7 +48,7 @@
 
 
 .window{
-    width: 1400px;
+    max-width: 1400px;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -94,28 +94,30 @@
 
 
 @media screen and (max-width:450px) {
-    .app-holder{
+    .app-holder{    
         width: 100%;
-        height: 100vh;
+        height: auto;
+        background-image: linear-gradient(to right top, #a1a1a1, #9d9ea2, #979ca2, #909aa2, #8799a1);
         position: relative;
+        overflow:hidden;
     }
-
     .window{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        max-width: 1400px;
+        top: 0;
+        left: 0;
         height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow:scroll;
     }
-
-
+    
+    
     .childCnt{
-        border-radius: 0px;
-        padding: 0px;
+        padding: 10px;
         width: 100%;
-        height: 100vh;
-        overflow: scroll;
+        height: 100%;
+        border-radius: 0px;
+        opacity: 1;
     }
-
+    
 }

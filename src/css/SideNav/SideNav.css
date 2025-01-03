@@ -54,11 +54,13 @@
 
 @media screen and (max-width:450px) {
     .nav-container{
-        width: 100%;
-        height: 7vh;
+        display: flex;
+        align-self: start;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
         position: fixed;
-        left: 0;
-        bottom: 0;
+        top: 0;
         right: 0;
         z-index: 1999;
     }
@@ -74,7 +76,7 @@
         display: flex;
         align-items: start;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         clip-path: unset;
@@ -112,7 +114,7 @@
 
     
     .liink{
-        display: none;
+        padding-left: 10px;
     }
     .link-container:hover .icon{
         color: white;
