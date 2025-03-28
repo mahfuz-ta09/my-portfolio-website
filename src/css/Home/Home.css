@@ -1,165 +1,123 @@
-.home-container{
-    margin: 40px 0px 0px 0px;
-    height: 100%;
+.hero{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
     width: 100%;
 }
 
-
-/* .overlay{
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.5));
-} */
-
-.hero{
-    position: absolute;
-    top: 15%;
-    left: 0%;
-    width: 50%;
-    padding: 30px;
+.hero-item{
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
-    text-align: left;
-    gap: 10px;
-    z-index: 21;
+    padding: 10px;
+}
+
+.hero p{
+    color: rgb(4, 225, 225);
+    font-size: 18px;
+}
+
+.hero h1{
+    font-size: 30px;
+    color: rgb(191, 194, 197);
+    font-weight: 900;
 }
 
 .hero h3{
-    font-size: 16px;
-    color: white;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 900;
 }
 
-.hero-tag p{
-    font-size: 18px;
-    color: white;
-    z-index: 21;
+.hero h5{
+    width: 500px;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
 }
 
-.hero-tag h1{
-    font-size: 45px;
-    color: white;
-    z-index: 21;
+.cv-btn{
+    border: 1px solid rgb(4, 225, 225);
+    padding: 9px 25px;
+    width: fit-content;
+    color: #fff;
+    font-weight: 800;
+    margin: 10px 0;
+    background: transparent;
+    backdrop-filter: blur(30px);
 }
 
-.img-container{
-    position: fixed;
-    width:  40%;
-    height:60%;
-    right: 50px;
-    top: 10%;
-    z-index: -1;
-}
-
-.img-container img{
-    object-fit: contain;
-    width: 100%;
-    height:100%;
-}
-
-.details{
-    position: absolute;
+.social-icons{
     display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-    bottom: 0;
-    left: 0;
-    min-height: 35vh;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
 }
 
-.about,.social,.experience{
-    width: 30%;
-    height: 100%;
-}
-
-
-.about p{
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    padding: 5px;
-    text-align: justify;
-}
-
-.experience p{
-    font-size: 14px;
-    font-weight: 300;
-    color: white;
-    padding: 5px;
-    text-align: justify;
-}
-.title{
-    color: white;
-    font-size: 16px;
-}
-
-
-.email{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
+.social-icons img{
+    height: 30vh;
+    border-radius: 10px;
 }
 
 .icons{
     display: flex;
     align-items: start;
     justify-content: start;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-}
-.socio-lnk{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    font-size: 14px;
-    color: white;
+    gap: 20px;
+    width: 100%;
+    margin: 10px 0 0 0;
 }
 
-@media screen and (max-width:450px) {
-    .home-container{
-        margin: 0px 0px 0px 0px;
-        height: scroll;
+.icon-1{
+    color: #fff;
+    font-size: 20px;
+}
+
+.icon-2{
+    color: #fff;
+    font-size: 20px;
+}
+
+.icon-3{
+    color: #fff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 30px;
         width: 100%;
     }
+
     
-    .img-container{
-        position: fixed;
-        width:  80%;
-        height:60%;
-        margin: 0 auto;
-        top: 1%;
-        z-index: -1;
-    }
-    
-    .hero{
-        top: 50%;
-        left: 0%;
-        width: 90%;
-    }
-    
-    .details{
+    .hero-item{
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
-        justify-content: space-evenly;
-        top: 80%;
-        min-height: auto;
-        width: 100%;
-        padding: 5px;
-        gap: 20px;
     }
 
-    .about,.social,.experience{
-        width: 95%;
-        height: auto;
+    .hero h1{
+        font-size: 25px;
+    }
+
+    .hero h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero h5{
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons img{
+        height: 20vh;
     }
     
 }
