@@ -23,6 +23,7 @@
     display: none;
 }
 
+
 .nav-body .FaGlobe{
     color: rgb(4, 225, 225);
     font-size: 40px;
@@ -46,6 +47,18 @@
     color: rgb(178, 177, 177);
 }
 
+
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+.active-icon{
+    color: #fff;
+}
 
 @media screen and (max-width:550px) {
     .nav-cntrl{

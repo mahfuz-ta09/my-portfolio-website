@@ -23,12 +23,12 @@ const SideNav = () => {
                 {isOpen ? <MdCancel onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>
                 : <FaBars onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>}
                 <ul className={isOpen?'nav-list show':'nav-list hide'}>
-                    <Link href="/" className={pathName === '/' ? 'link-container active' : 'link-container'}><FaHome className='icon'/><div className='liink'>Home</div></Link>
-                    <Link href="/projects" className={pathName === '/projects' ? 'link-container active' : 'link-container'}><FaCrop  className='icon'/><div className='liink'>Projects</div></Link>
-                    <Link href="/skill&tech" className={pathName === '/skill&tech' ? 'link-container active' : 'link-container'}><FaQuidditch  className='icon'/><div className='liink'>Tech</div></Link>
-                    {/* <Link href="/blog"  className={pathName === '/blog' ? 'link-container active' : 'link-container'}><FaRegFilePdf  className='icon'/><div className='liink'>Blogs</div></Link> */}
-                    <Link href="/education" className={pathName === '/education' ? 'link-container active' : 'link-container'}><BsFillMortarboardFill className='icon'/><div className='liink'>Education</div></Link>
-                    <Link href="/contact" className={pathName === '/contact' ? 'link-container active' : 'link-container'}><FaMobile className='icon'/><div className='liink'>Contact</div></Link>
+                    <Link href="/" className={pathName === '/' ? 'active' : 'link-container'}><FaHome  className={pathName === '/' ? 'active-icon' : 'icon'}/><div className='liink'>Home</div></Link>
+                    <Link href="/projects" className={pathName === '/projects' ? 'active' : 'link-container'}><FaCrop   className={pathName === '/projects' ? 'active-icon' : 'icon'}/><div className='liink'>Projects</div></Link>
+                    <Link href="/skill&tech" className={pathName === '/skill&tech' ? 'active' : 'link-container'}><FaQuidditch   className={pathName === '/skill&tech' ? 'active-icon' : 'icon'}/><div className='liink'>Tech</div></Link>
+                    {/* <Link href="/blog"  className={pathName === '/blog' ? 'active' : 'link-container'}><FaRegFilePdf   className={pathName === '/contact' ? 'active-icon' : 'link-container'}/><div className='liink'>Blogs</div></Link> */}
+                    <Link href="/education" className={pathName === '/education' ? 'active' : 'link-container'}><BsFillMortarboardFill  className={pathName === '/education' ? 'active-icon' : 'icon'}/><div className='liink'>Education</div></Link>
+                    <Link href="/contact" className={pathName === '/contact' ? 'active' : 'link-container'}><FaMobile  className={pathName === '/contact' ? 'active-icon' : 'icon'}/><div className='liink'>Contact</div></Link>
                 </ul>
             </div>
         </div>

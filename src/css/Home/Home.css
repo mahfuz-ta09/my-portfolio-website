@@ -56,7 +56,9 @@
 }
 
 .social-icons img{
-    height: 30vh;
+    height: 40vh;
+    width: 25vw;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -117,7 +119,10 @@
     }
 
     .social-icons img{
-        height: 20vh;
+        height: 25vh;
+        width: 60vw;
+        object-fit: cover;
+        border-radius: 5px;
     }
     
 }
