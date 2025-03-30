@@ -1,56 +1,77 @@
 'use client'
 import "@/css/Projects/Projects.css"
-import { faArrowRight, faFile, faGlobe } from "@fortawesome/free-solid-svg-icons"
+import { faArrowLeft, faArrowRight , faGlobe, faMobileScreen , faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from 'next/navigation'
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
+const iconMap: Record<string, any> = {
+  faGlobe: faGlobe,
+  faServer: faServer,
+  faMobileScreen: faMobileScreen,
+}
 
 const ProjectPage = () => {
   const router = useRouter()
-  
+  const [project,setProject] = useState<any>(null)
+  const [projectId,setProjectId] = useState(1)
+  const [totalProject,setTotalProject] = useState(0)
 
-  const handleRoute = (k : string) =>{
-    router.push(`/projects/${k}`)
+  useEffect(() => {
+    fetch("/DataSet/projects.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setTotalProject(data?.length)
+        const matchedProject = data.find((proj:any) => proj.id === projectId)
+        setProject(matchedProject || null)
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, [projectId])
+
+  const handleProjectId = (id: number) => {
+    if(projectId + id > 0 && projectId + id <= 2) {
+      setProjectId(projectId + id)
+    }
   }
+  
 
   return (
     <div className="projects-holder">
-
-      <div className="projects">
-
-          <div className="single-projects">
-            <div className="details">
-                <div className="detail">
-                  <h1 className="detail-tag" data-text="MKN Global Consultant">MKN Global Consultant</h1>
-                  <p>
-                    The system, designed for a consultancy firm, aids students and workers in understanding the 
-                    visa procedure. It allows users to send emails and access detailed procedural information, 
-                    ensuring they are well-informed. Developed with modern web technologies, this system guarantees 
-                    a seamless user experience, making the complex visa process more accessible and manageable.
-                  </p>
-                </div>
-                <div className="link-holder">
-                  <Link  href="https://mknglobal.co.uk/" className="site-link"><FontAwesomeIcon className="single-projects-icon" icon={faGlobe} />site</Link>
-                  <button onClick={()=>handleRoute("kk")} className="detls-link"><FontAwesomeIcon className="single-projects-icon" icon={faArrowRight} />details</button>
-                </div>
-            </div>
-            <img className="project-img1" src="https://i.ibb.co.com/1TKrF6c/Capture3.png" alt="Capture3"/>
+      <div className="project-details">
+        <h1>[{project?.id}/{totalProject}] {project?.projectName}</h1>
+        <div className="link-container-1">
+          {
+            project?.links?.map((link:any) => (
+              <Link key={link?.name} href={link?.url} target="_blank" className="project-link">
+                <FontAwesomeIcon icon={iconMap[link?.icon]} className="link-icon" />
+                <span>{link?.name}</span>
+              </Link>
+            ))
+          }
+        </div>
+        <div className="project-description">
+          <div className="description">
+            {project?.description?.map((desc:any) => (
+              <p key={desc}><span>-</span>{desc}</p>
+            ))}
           </div>
 
-
-      </div>
-      <div className="project-head">
-        {/* <div className="project-head-title">
-          <FontAwesomeIcon className="project-icon" icon={faFile} />
-          <h1>Projects</h1>
-        </div> */}
-        <div className="project-navigation">
-          <button className="project-navigation-btn">next</button>
-          <button className="project-navigation-btn">prev</button>
+          <div className="project-tech">
+            <h5>Frontend: <span>{project?.technology?.frontend}</span></h5>
+            <h5>Backend: <span>{project?.technology?.backend}</span></h5>
+            <h5>Hosted: <span>{project?.technology?.hosting}</span></h5>
+            <h5>Other: <span>{project?.technology?.other}</span></h5>
+          </div>
         </div>
       </div>
-
+      <div className="project-navigation">
+        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
+        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
+      </div>
+      <div className="project-image">
+        <img src={project?.image} alt={project?.projectName} /> 
+      </div>
     </div>
   )
 }

@@ -20,7 +20,7 @@ const Home = () => {
             self-motivated and hardworking,seeking an opportunity to work in a challenging environment to prove my 
             skills and utilize my knowledge in the growth of the organization.
           </h5>
-          <Link href="https://docs.google.com/document/d/1kqscHHtjV1YCIUpYxHvULoNPrs-9HvEN9e1j_KZvN8c/edit?usp=sharing" className="cv-btn" >check cv</Link>
+          <Link target="_blank" href="https://docs.google.com/document/d/1kqscHHtjV1YCIUpYxHvULoNPrs-9HvEN9e1j_KZvN8c/edit?usp=sharing" className="cv-btn" >check cv</Link>
         </div>
         <div className="social-icons">
           <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />

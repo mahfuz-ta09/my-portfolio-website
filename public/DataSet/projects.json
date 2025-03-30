@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "projectName": "NRC Education Group",
+        "links": [
+            {
+                "name": "Visit Website",
+                "url": "https://www.nrcedu-uk.com/",
+                "icon": "faGlobe"
+            },
+            {
+                "name": "Backend Code",
+                "url": "https://github.com/mahfuz-ta09/nrc-server",
+                "icon": "faServer"
+            },
+            {
+                "name": "Frontend Code",
+                "url": "https://github.com/mahfuz-ta09/nrc-london",
+                "icon": "faMobileScreen"
+            }
+        ],
+        "description": [
+            "This is a website for NRC Global Consultancy, a UK-based consultancy firm, designed to provide services for students.",
+            "Students can submit documents and access courses or universities through this website.",
+            "Users can submit documents to apply as an agent.",
+            "Students can gain detailed knowledge about English tests.",
+            "A complete system has been developed for admin/super admin to manage various website data.",
+            "Custom authentication system."
+        ],
+        "technology": {
+            "frontend": "Next.js, Vanilla CSS, TypeScript, Redux Toolkit",
+            "backend": "Express, MongoDB, Cloudinary, Multer, Nodemailer, TypeScript",
+            "hosting": "Frontend hosted on Vercel, server hosted on Railway",
+            "other": "jsonwebtoken, date-fns, bcrypt, cookie-parser, etc."
+        },
+        "image":"https://i.ibb.co.com/s968yh3K/nrc-banner.png"
+    },
+    {
+        "id": 2,
+        "projectName": "MKN Global Consultancy",
+        "links": [
+            {
+                "name": "Visit Website",
+                "url": "https://mknglobal.co.uk/",
+                "icon": "faGlobe"
+            },
+            {
+                "name": "Backend Code",
+                "url": "https://www.nrcedu-uk.com/",
+                "icon": "faServer"
+            },
+            {
+                "name": "Frontend Code",
+                "url": "https://www.nrcedu-uk.com/",
+                "icon": "faMobileScreen"
+            }
+        ],
+        "description": [
+            "This is a website for NRC Global Consultancy, a UK-based consultancy firm, designed to provide services for students.",
+            "Students can submit documents and access courses or universities through this website.",
+            "Users can submit documents to apply as an agent.",
+            "Students can gain detailed knowledge about English tests.",
+            "A complete system has been developed for admin/super admin to manage various website data.",
+            "Custom authentication system."
+        ],
+        "technology": {
+            "frontend": "React , React router , vanilla CSS+Tailwind CSS",
+            "backend": "",
+            "hosting": "Frontend hosted on Netlify",
+            "other": ""
+        },
+        "image":"https://i.ibb.co.com/ynQtSjXF/mkn-banner.png"
+    }
+  ]
+  

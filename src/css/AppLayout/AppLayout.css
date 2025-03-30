@@ -1,6 +1,6 @@
 .app-body{    
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -8,10 +8,12 @@
     position: fixed;
     top: 0;
     left: 0;
+    overflow: auto;
 }
 
 .app-contents{
     max-width: 1300px;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
