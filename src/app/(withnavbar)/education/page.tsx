@@ -4,13 +4,10 @@ import { faBookAtlas, faSchool } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
+
 const EducationPage = () => {
   return (
     <div className="education-container">
-      <div className="education-head">
-        <FontAwesomeIcon className="education-head-icon" icon={faBookAtlas}/>
-        <h1>Education</h1>
-      </div>
 
       <div className="eduLan">
         

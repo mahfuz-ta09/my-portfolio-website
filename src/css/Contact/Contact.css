@@ -1,8 +1,10 @@
-.contact-head{
+.contact-holder{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     padding: 10px;
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -15,10 +17,6 @@
 .contact-icon{
     width: 25px;
     height:25px;
-}
-
-.contact-head h1{
-    font-size: 25px;
 }
 
 
@@ -187,17 +185,10 @@ form {
 }
 
 @media screen and (max-width:450px) {
-  .contact-head{
-      padding: 5px;
-  }
 
   .contact-icon{
       width: 20px;
       height: 20px;
-  }
-
-  .contact-head h1{
-      font-size: 20px;
   }
 
   .contact-holder{
@@ -244,6 +235,6 @@ form {
 
 @media screen and (max-width:375px) {
   .form-container {
-    margin: 5vh auto 0;
+    /* margin: 5vh auto 0; */
   }
 }

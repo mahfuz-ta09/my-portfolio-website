@@ -154,7 +154,7 @@
 
 .expertise-title {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 10px;
     color: #fff;
 }
@@ -162,7 +162,7 @@
 .expertise-list {
     font-size: 18px;
     line-height: 1.6;
-    font-weight: 600;
+    font-weight: 400;
     color: #ffffff;
 }
 
