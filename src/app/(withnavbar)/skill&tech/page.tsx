@@ -14,16 +14,13 @@ const SkillAndTech = () => {
   const otherSkills = ['HTML', 'CSS', 'BOOTSTRAP5', 'TAILWIND', 'JS', 'Firebase', 'Git','Redux']
 
 
+
   return (
     <div className="skill-container">
-        <div className="skill-title">
-          <TbBooks className="header-icon"/>
-          <h2>Familiar Tech</h2>
-        </div>
         <div className="skills">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index}>
-              <Image src={skill.icon} height={70} width={70} alt={skill.title} />
+              <Image src={skill?.icon} height={70} width={70} alt={skill.title} />
               <h3 className="skill-card-title">{skill.title}</h3>
             </div>
           ))}
