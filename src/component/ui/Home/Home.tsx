@@ -1,7 +1,6 @@
 import "@/css/Home/Home.css"
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { TbMailFilled } from "react-icons/tb"
 import Link from "next/link"
 import { SiCodechef } from "react-icons/si"
 
