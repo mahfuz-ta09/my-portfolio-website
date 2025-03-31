@@ -14,7 +14,7 @@ const Home = () => {
         <div className="hero-item">
           <p>Hello, I am</p>
           <h1>Md Mahfuz Anam Tasnim</h1>
-          <h3>Full Stack web developer</h3>
+          <h3>Full Stack Web Developer</h3>
           <h5>
             I am a dedicated and practicing MERN stack developer with solid knowledge in different technologies and 
             self-motivated and hardworking,seeking an opportunity to work in a challenging environment to prove my 
@@ -25,9 +25,9 @@ const Home = () => {
         <div className="social-icons">
           <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />
           <div className="icons">
-            <FaGithub   className="icon-1"/>
-            <FaLinkedin className="icon-2" />
-            <SiCodechef className="icon-3" />
+            <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub   className="icon-1" /></Link>
+            <Link target="_blank" href="https://www.linkedin.com/in/ma-tasnim"><FaLinkedin className="icon-2" /></Link>
+            <Link target="_blank" href="https://www.codechef.com/users/m_anam_26"><SiCodechef className="icon-3" /></Link>
           </div>
         </div>
     </div>
