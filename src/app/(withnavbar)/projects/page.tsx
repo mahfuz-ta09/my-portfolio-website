@@ -2,7 +2,6 @@
 import "@/css/Projects/Projects.css"
 import { faArrowLeft, faArrowRight , faGlobe, faMobileScreen , faServer } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useRouter } from 'next/navigation'
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
