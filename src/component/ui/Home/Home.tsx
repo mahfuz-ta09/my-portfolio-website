@@ -19,13 +19,13 @@ const Home = () => {
             self-motivated and hardworking,seeking an opportunity to work in a challenging environment to prove my 
             skills and utilize my knowledge in the growth of the organization.
           </h5>
-          <Link target="_blank" href="https://docs.google.com/document/d/1kqscHHtjV1YCIUpYxHvULoNPrs-9HvEN9e1j_KZvN8c/edit?usp=sharing" className="cv-btn" >check cv</Link>
+          <Link target="_blank" href="https://drive.google.com/file/d/1Q0CxpMjC8C6N200I9PEJdc-0Rt0uMooY/view?usp=sharing" className="cv-btn" >check cv</Link>
         </div>
         <div className="social-icons">
           <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />
           <div className="icons">
             <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub   className="icon-1" /></Link>
-            <Link target="_blank" href="https://www.linkedin.com/in/ma-tasnim"><FaLinkedin className="icon-2" /></Link>
+            <Link target="_blank" href="https://www.linkedin.com/in/mahfuz09"><FaLinkedin className="icon-2" /></Link>
             <Link target="_blank" href="https://www.codechef.com/users/m_anam_26"><SiCodechef className="icon-3" /></Link>
           </div>
         </div>
