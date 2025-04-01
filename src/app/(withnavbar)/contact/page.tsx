@@ -13,7 +13,7 @@ type Inputs = {
   message: string
 }
 
-const SERVICE_ID = "service_gltvwr8"
+const SERVICE_ID = "service_aru8zsr"
 const TEMPLATE_ID = "template_vyxda74"
 const PUBLIC_KEY = "vDTcEUa05m7FPqRLn"
 
@@ -21,6 +21,7 @@ const ContactPage = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<Inputs>()
 
@@ -38,6 +39,7 @@ const ContactPage = () => {
     .then(
       () => {
         toast.success("Email sent successfully!")
+        reset()
       },
       (error) => {
         toast.error(error.text)
