@@ -13,7 +13,6 @@ const iconMap: Record<string, any> = {
 }
 
 const ProjectPage = () => {
-  const router = useRouter()
   const [project,setProject] = useState<any>(null)
   const [projectId,setProjectId] = useState(1)
   const [totalProject,setTotalProject] = useState(0)
@@ -39,7 +38,8 @@ const ProjectPage = () => {
   return (
     <div className="projects-holder">
       <div className="project-details">
-        <h1>[{project?.id}/{totalProject}] {project?.projectName}</h1>
+        <h6>[{project?.id}/{totalProject}]</h6>
+        <h1>{project?.projectName}</h1>
         <div className="link-container-1">
           {
             project?.links?.map((link:any) => (
@@ -58,10 +58,10 @@ const ProjectPage = () => {
           </div>
 
           <div className="project-tech">
-            <h5>Frontend: <span>{project?.technology?.frontend}</span></h5>
-            <h5>Backend: <span>{project?.technology?.backend}</span></h5>
-            <h5>Hosted: <span>{project?.technology?.hosting}</span></h5>
-            <h5>Other: <span>{project?.technology?.other}</span></h5>
+            {project?.technology?.frontend && <h5>Frontend: <span>{project?.technology?.frontend}</span></h5>}
+            {project?.technology?.backend && <h5>Backend: <span>{project?.technology?.backend}</span></h5>}
+            {project?.technology?.hosting && <h5>Hosted: <span>{project?.technology?.hosting}</span></h5>}
+            {project?.technology?.other && <h5>Other: <span>{project?.technology?.other}</span></h5>}
           </div>
         </div>
       </div>
