@@ -1,7 +1,5 @@
 "use client"
 import '@/css/Contact/Contact.css'
-import { faMobile } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useForm, SubmitHandler } from "react-hook-form"
 import emailjs from '@emailjs/browser'
 import { toast } from 'sonner'
