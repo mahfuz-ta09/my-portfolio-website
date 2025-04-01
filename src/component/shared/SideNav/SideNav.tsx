@@ -11,6 +11,7 @@ import { MdCancel } from 'react-icons/md'
 import { useEffect, useRef, useState } from 'react'
 
 
+
 const SideNav = () => {
     const pathName = usePathname()
     const [isOpen,setIsOpen] = useState(false)
