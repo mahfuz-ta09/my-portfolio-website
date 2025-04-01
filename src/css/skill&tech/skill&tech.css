@@ -49,7 +49,7 @@
 
 .skill-card:hover{
     transition: .3s ease-in-out;
-    color: teal;
+    color: rgb(4, 225, 225);
     transform: scale(1.04);
 }
 
@@ -62,13 +62,13 @@
 
 .skill-card:hover .skill-card-title{
     transition: .3s ease-in-out;
-    color: teal;
+    color: rgb(4, 225, 225);
 }
 
 
 .skill-card:hover .skill-icon{
     transition: .3s ease-in-out;
-    background: teal;
+    background: rgb(4, 225, 225);
     border: 3px solid white;
     color: white;
 }

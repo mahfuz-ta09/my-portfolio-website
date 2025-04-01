@@ -34,7 +34,8 @@ const SideNav = () => {
     return (
         <div className="nav-container">
             <div className="nav-body">
-                <FaGlobe className='FaGlobe'/>
+                {/* <FaGlobe className='FaGlobe'/> */}
+                <img className='nav-profile' src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />
                 {isOpen ? <MdCancel onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>
                 : <FaBars onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>}
                 <ul ref={linkRef} className={isOpen?'nav-list show':'nav-list hide'}>

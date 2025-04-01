@@ -21,12 +21,20 @@ const Home = () => {
           </h5>
           <Link target="_blank" href="https://drive.google.com/file/d/1Q0CxpMjC8C6N200I9PEJdc-0Rt0uMooY/view?usp=sharing" className="cv-btn" >check cv</Link>
         </div>
-        <div className="social-icons">
-          <img src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />
+        <div className="social-details">
+          <div className="contest">
+            <SiCodechef className="contest-icon" />
+            <div className="contest-details">
+              <h4>Summery in </h4>
+              <h6>Codechef</h6>
+              <h6>solved 70+ problems</h6>
+              <h6>attended 16+ conest</h6>
+              <Link target="_blank" className="codechef-link" href="https://www.codechef.com/users/m_anam_26">check</Link>
+            </div>
+          </div>
           <div className="icons">
             <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub   className="icon-1" /></Link>
             <Link target="_blank" href="https://www.linkedin.com/in/mahfuz09"><FaLinkedin className="icon-2" /></Link>
-            <Link target="_blank" href="https://www.codechef.com/users/m_anam_26"><SiCodechef className="icon-3" /></Link>
           </div>
         </div>
     </div>
