@@ -132,16 +132,15 @@ form {
   margin: 15px auto;
   border: none;
   background-color: white;
-  color: rgb(4, 225, 225);
+  color: rgb(0, 0, 0);
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: 500;
-  
+  font-weight: 800;
 }
 
 .submit-btn:hover {
-  transition: .3s ease-in-out;
+  transition: .1s ease-in-out;
   background-color: rgb(56, 212, 212);
 }
 
@@ -172,6 +171,7 @@ form {
     padding: 4px;
     border: 2px solid #ccc;
     border-radius: 6px;
+    color: #fff;
   }
 
   .text-input{
@@ -180,6 +180,7 @@ form {
       padding: 5px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      color: #fff;
 }
 
 }
