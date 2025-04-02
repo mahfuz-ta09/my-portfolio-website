@@ -69,9 +69,30 @@
     gap: 20px;
 }
 
+.contest-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contest-icon-str-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
 .contest-icon{
     font-size: 90px;
     color: #fff;
+}
+
+.contest-icon-str{
+    font-size: 20px;
+    color: rgb(235, 197, 146);
 }
 
 .contest-details{
@@ -79,6 +100,7 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    gap: 2px;
     color: #fff;
     font-size: 14px;
     font-weight: 200;

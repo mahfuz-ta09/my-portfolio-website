@@ -46,12 +46,12 @@
             },
             {
                 "name": "Backend Code",
-                "url": "https://www.nrcedu-uk.com/",
+                "url": "",
                 "icon": "faServer"
             },
             {
                 "name": "Frontend Code",
-                "url": "https://www.nrcedu-uk.com/",
+                "url": "https://github.com/mat557/mkn-global-con",
                 "icon": "faMobileScreen"
             }
         ],

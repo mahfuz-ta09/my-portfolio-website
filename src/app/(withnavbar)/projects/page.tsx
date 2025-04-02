@@ -37,14 +37,18 @@ const ProjectPage = () => {
   return (
     <div className="projects-holder">
       <div className="project-details">
+      <div className="project-navigation">
+        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
+        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
+      </div>
         <h6>[{project?.id}/{totalProject}]</h6>
         <h1>{project?.projectName}</h1>
         <div className="link-container-1">
           {
             project?.links?.map((link:any) => (
               <Link key={link?.name} href={link?.url} target="_blank" className="project-link">
-                <FontAwesomeIcon icon={iconMap[link?.icon]} className="link-icon" />
-                <span>{link?.name}</span>
+                {link?.url && <FontAwesomeIcon icon={iconMap[link?.icon]} className="link-icon" />}
+                {link?.url && <span>{link?.name}</span>}
               </Link>
             ))
           }
@@ -63,10 +67,6 @@ const ProjectPage = () => {
             {project?.technology?.other && <h5>Other: <span>{project?.technology?.other}</span></h5>}
           </div>
         </div>
-      </div>
-      <div className="project-navigation">
-        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
-        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
       </div>
       <div className="project-image">
         <img src={project?.image} alt={project?.projectName} /> 

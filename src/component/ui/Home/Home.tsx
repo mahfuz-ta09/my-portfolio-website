@@ -1,5 +1,5 @@
 import "@/css/Home/Home.css"
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin, FaStar } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import Link from "next/link"
 import { SiCodechef } from "react-icons/si"
@@ -23,7 +23,16 @@ const Home = () => {
         </div>
         <div className="social-details">
           <div className="contest">
-            <SiCodechef className="contest-icon" />
+            <div className="contest-logo">
+              <SiCodechef className="contest-icon" />
+              <div className="contest-icon-str-container">
+                <FaStar className="contest-icon-str"  />
+                {/* <FaStar className="contest-icon-str"  />
+                <FaStar className="contest-icon-str"  />
+                <FaStar className="contest-icon-str"  />
+                <FaStar className="contest-icon-str"  /> */}
+              </div>
+            </div>
             <div className="contest-details">
               <h4>Summery in </h4>
               <h6>Codechef</h6>
