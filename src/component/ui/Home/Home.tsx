@@ -2,7 +2,7 @@ import "@/css/Home/Home.css"
 import { FaLinkedin, FaStar } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import Link from "next/link"
-import { SiCodechef } from "react-icons/si"
+import { SiCodechef, SiCodeforces } from "react-icons/si"
 
 
 
@@ -10,6 +10,7 @@ import { SiCodechef } from "react-icons/si"
 const Home = () => {
   return (
     <div className="hero">
+
         <div className="hero-item">
           <p>Hello, I am</p>
           <h1>Md Mahfuz Anam Tasnim</h1>
@@ -21,29 +22,24 @@ const Home = () => {
           </h5>
           <Link target="_blank" href="https://drive.google.com/file/d/1Q0CxpMjC8C6N200I9PEJdc-0Rt0uMooY/view?usp=sharing" className="cv-btn" >check cv</Link>
         </div>
+
         <div className="social-details">
+
           <div className="contest">
             <div className="contest-logo">
-              <SiCodechef className="contest-icon" />
               <div className="contest-icon-str-container">
-                <FaStar className="contest-icon-str"  />
-                {/* <FaStar className="contest-icon-str"  />
-                <FaStar className="contest-icon-str"  />
-                <FaStar className="contest-icon-str"  />
-                <FaStar className="contest-icon-str"  /> */}
+                <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub  className="contest-icon-str"/></Link>
+                <Link target="_blank" href="https://www.linkedin.com/in/mahfuz09"><FaLinkedin   className="contest-icon-str"/></Link>
+                <Link target="_blank" href="https://www.codechef.com/users/m_anam_26"><SiCodechef   className="contest-icon-str"/></Link>
+                <Link target="_blank" href="https://codeforces.com/profile/manam"><SiCodeforces   className="contest-icon-str"/></Link>
               </div>
             </div>
+
             <div className="contest-details">
-              <h4>Summery in </h4>
-              <h6>Codechef</h6>
-              <h6>solved 70+ problems</h6>
-              <h6>attended 16+ conest</h6>
-              <Link target="_blank" className="codechef-link" href="https://www.codechef.com/users/m_anam_26">check</Link>
+              <h6>solved 200+ problems</h6>
+              <h6>attended 20+ conests</h6>
             </div>
-          </div>
-          <div className="icons">
-            <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub   className="icon-1" /></Link>
-            <Link target="_blank" href="https://www.linkedin.com/in/mahfuz09"><FaLinkedin className="icon-2" /></Link>
+
           </div>
         </div>
     </div>

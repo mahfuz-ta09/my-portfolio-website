@@ -3,8 +3,9 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 30px;
+    padding: 10px;
 }
 
 .hero-item{
@@ -58,14 +59,13 @@
 }
 
  .contest{
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgb(4, 225, 225);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row; 
     gap: 20px;
 }
 
@@ -73,26 +73,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 5px;
+    height: 100%;
+    width: 40%;
 }
 
-.contest-icon-str-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 70%;
+.contest-icon-str-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    justify-content: center;                
+    gap: 10px;                              
+    width: 100%;
 }
-
-.contest-icon{
-    font-size: 90px;
-    color: #fff;
-}
-
 .contest-icon-str{
-    font-size: 20px;
-    color: rgb(235, 197, 146);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+
+    &:hover{
+        scale: 1.4;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .contest-details{
@@ -100,10 +99,12 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    gap: 2px;
+    gap: 10px;
     color: #fff;
     font-size: 14px;
     font-weight: 200;
+    height: 100%;
+    width: 60%;
 }
 .codechef-link{
     color: rgb(4, 225, 225);
@@ -177,5 +178,13 @@
         height: 150px;
         width: 300px;
         box-shadow: 0px 0px 5px rgb(4, 225, 225);
+    }
+
+    .contest-logo{
+        width: 30%;
+    }
+
+    .contest-details{
+        width: 70%;
     }
 }
