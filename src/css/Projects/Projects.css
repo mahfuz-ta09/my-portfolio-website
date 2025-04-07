@@ -116,7 +116,6 @@
     justify-content: end;
     gap: 20px;
     width: 100%;
-    margin-top: 50px;
 }
 
 .project-navigation button{
@@ -133,7 +132,7 @@
 }
 
 .project-image{
-    width: 80vw;
+    width: 40vw;
     object-fit: cover;
     margin: 40px;
 }
@@ -163,5 +162,8 @@
 
     .project-tech{
         width: 100%;
+    }
+    .project-image{
+        width: 80vw;
     }
 }
