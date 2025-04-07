@@ -37,10 +37,6 @@ const ProjectPage = () => {
   return (
     <div className="projects-holder">
       <div className="project-details">
-      <div className="project-navigation">
-        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
-        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
-      </div>
         <h6>[{project?.id}/{totalProject}]</h6>
         <h1>{project?.projectName}</h1>
         <div className="link-container-1">
@@ -71,6 +67,10 @@ const ProjectPage = () => {
       {/* <div className="project-image"> */}
         {/* <img src={project?.image} alt={project?.projectName} />  */}
       {/* </div> */}
+      <div className="project-navigation">
+        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
+        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
+      </div>
     </div>
   )
 }
