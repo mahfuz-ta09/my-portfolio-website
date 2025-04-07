@@ -68,9 +68,9 @@ const ProjectPage = () => {
           </div>
         </div>
       </div>
-      <div className="project-image">
-        <img src={project?.image} alt={project?.projectName} /> 
-      </div>
+      {/* <div className="project-image"> */}
+        {/* <img src={project?.image} alt={project?.projectName} />  */}
+      {/* </div> */}
     </div>
   )
 }

@@ -135,6 +135,7 @@
     width: 40vw;
     object-fit: cover;
     margin: 40px;
+    background: #000;
 }
 
 @media screen and (max-width: 450px){
