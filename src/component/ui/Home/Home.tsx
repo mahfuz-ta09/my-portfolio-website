@@ -37,7 +37,7 @@ const Home = () => {
 
             <div className="contest-details">
               <h6>solved 200+ problems</h6>
-              <h6>attended 20+ conests</h6>
+              <h6>attended 20+ contests</h6>
             </div>
 
           </div>
