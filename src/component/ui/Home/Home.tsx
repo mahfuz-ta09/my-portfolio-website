@@ -1,49 +1,84 @@
 import "@/css/Home/Home.css"
-import { FaLinkedin, FaStar } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
+import Image from "next/image"
 import Link from "next/link"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { SiCodechef, SiCodeforces } from "react-icons/si"
+import { TbArrowRight, TbFileText } from "react-icons/tb"
 
+const socials = [
+  { label: "GitHub", href: "https://github.com/mahfuz-ta09", icon: FaGithub },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/mahfuz09", icon: FaLinkedin },
+  { label: "CodeChef", href: "https://www.codechef.com/users/m_anam_26", icon: SiCodechef },
+  { label: "Codeforces", href: "https://codeforces.com/profile/manam", icon: SiCodeforces },
+]
 
-
+const stats = [
+  { value: "200+", label: "Problems solved" },
+  { value: "20+", label: "Contests attended" },
+]
 
 const Home = () => {
   return (
-    <div className="hero">
+    <div className="section-holder">
+      <div className="hero">
 
-        <div className="hero-item">
-          <p>Hello, I am</p>
-          <h1>Md Mahfuz Anam Tasnim</h1>
-          <h3>Full Stack Web Developer</h3>
-          <h5>
-            I am a dedicated and practicing MERN stack developer with solid knowledge in different technologies and 
-            self-motivated and hardworking,seeking an opportunity to work in a challenging environment to prove my 
-            skills and utilize my knowledge in the growth of the organization.
-          </h5>
-          <Link target="_blank" href="https://drive.google.com/file/d/10wnyXUIp3GxYxX5oJNLKzC37v6bGwHr0/view?usp=sharing" className="cv-btn" >check cv</Link>
-        </div>
+        <div className="hero-content">
+          <p className="section-eyebrow">Hello, I&apos;m</p>
+          <h1 className="hero-name">Md Mahfuz Anam Tasnim</h1>
+          <h2 className="hero-role">
+            Full Stack Web Developer <span>&amp; Programming Instructor</span>
+          </h2>
+          <p className="hero-bio">
+            I&apos;m a MERN stack developer who builds reliable, SEO-friendly web applications from front end to back end.
+            I use AI tools like Claude to speed up production and improve accuracy.
+            I also teach Scratch, Arduino, and programming fundamentals. I&apos;m self-motivated and hardworking,
+            and I&apos;m looking for a challenging role where I can keep growing and help my team succeed.
+          </p>
 
-        <div className="social-details">
-
-          <div className="contest">
-            <div className="contest-logo">
-              <div className="contest-icon-str-container">
-                <Link target="_blank" href="https://github.com/mahfuz-ta09"><FaGithub  className="contest-icon-str"/></Link>
-                <Link target="_blank" href="https://www.linkedin.com/in/mahfuz09"><FaLinkedin   className="contest-icon-str"/></Link>
-                <Link target="_blank" href="https://www.codechef.com/users/m_anam_26"><SiCodechef   className="contest-icon-str"/></Link>
-                <Link target="_blank" href="https://codeforces.com/profile/manam"><SiCodeforces   className="contest-icon-str"/></Link>
-              </div>
-            </div>
-
-            <div className="contest-details">
-              <h6>solved 200+ problems</h6>
-              <h6>attended 20+ contests</h6>
-            </div>
-
+          <div className="hero-actions">
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/10wnyXUIp3GxYxX5oJNLKzC37v6bGwHr0/view?usp=sharing"
+              className="btn btn-primary"
+            >
+              <TbFileText /> View CV
+            </Link>
+            <Link href="/contact" className="btn btn-ghost">
+              Contact me <TbArrowRight />
+            </Link>
           </div>
+
+          <ul className="hero-socials">
+            {socials.map(({ label, href, icon: Icon }) => (
+              <li key={label}>
+                <Link target="_blank" href={href} aria-label={label} title={label}><Icon /></Link>
+              </li>
+            ))}
+          </ul>
         </div>
+
+        <aside className="hero-card glass-card">
+          <div className="hero-photo">
+            <Image
+              src="https://i.ibb.co.com/NK3TRvY/myppic.jpg"
+              alt="Md Mahfuz Anam Tasnim"
+              fill
+              sizes="220px"
+              priority
+            />
+          </div>
+          <dl className="hero-stats">
+            {stats.map(({ value, label }) => (
+              <div key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+        </aside>
+
+      </div>
     </div>
-      
   )
 }
 

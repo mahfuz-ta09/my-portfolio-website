@@ -17,3 +17,60 @@
     height: 100%;
     margin: 0 auto;
 }
+/* Shared page styles */
+.section-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: calc(max(10vh, 64px) + 20px) 20px 40px;
+}
+
+.section-wrap {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.section-eyebrow {
+    color: rgb(4, 225, 225);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.glass-card {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+}
+
+.pill {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    background: rgba(4, 225, 225, 0.12);
+    color: rgb(4, 225, 225);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+    .section-holder {
+        padding: calc(max(10vh, 64px) + 10px) 16px 32px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}

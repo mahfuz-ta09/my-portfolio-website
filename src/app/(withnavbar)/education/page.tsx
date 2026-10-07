@@ -1,41 +1,59 @@
 import "@/css/Education/Education.css"
-import { faGoogleScholar } from "@fortawesome/free-brands-svg-icons"
-import { faBookAtlas, faSchool } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/site"
+import { TbSchool, TbMapPin, TbLanguage, TbBuildingBank } from "react-icons/tb"
 
+export const metadata: Metadata = pageMetadata(
+  "Education",
+  "Education of Md Mahfuz Anam Tasnim: B.Sc. (Honours) in Mathematics at Murari Chand College, Sylhet, Bangladesh. Fluent in English and Bangla.",
+  "/education"
+)
 
+const languages = [
+  { name: "Bangla", level: "Native" },
+  { name: "English", level: "Fluent" },
+]
 
 const EducationPage = () => {
   return (
-    <div className="education-container">
+    <div className="section-holder">
+      <div className="section-wrap">
 
-      <div className="eduLan">
-        
-        <div className="edu">
-          <h1>Education</h1>
-          <div className="edu-details">
-            <h1>Bsc Honours</h1>
-            <div className="details-1">
-              <FontAwesomeIcon className="details-1-icon" icon={faGoogleScholar}/>
-              <h1>Mathematics</h1>
-            </div>
-            <div className="details-1">
-              <FontAwesomeIcon className="details-1-icon" icon={faSchool}/>
-              <h1>Murari Chand College.</h1>
-            </div>
-              <h1>Sylhet, Bangladesh</h1>
-          </div>
-        </div>
-        
-        <div className="lan">
-          <h1>Language</h1>
-          <div className="lan-det">
-            <h1>Native: Bangla</h1>
-            <h1>Fluent: English</h1>
-          </div>
+        <header>
+          <p className="section-eyebrow">Education</p>
+          <h1 className="section-title">Academic background</h1>
+        </header>
+
+        <div className="education-grid">
+
+          <section className="edu-card glass-card">
+            <span className="edu-card-icon"><TbSchool /></span>
+            <p className="edu-card-label">Degree</p>
+            <h2 className="edu-card-title">B.Sc. (Honours) in Mathematics</h2>
+
+            <ul className="edu-meta">
+              <li><TbBuildingBank className="edu-meta-icon" />Murari Chand College</li>
+              <li><TbMapPin className="edu-meta-icon" />Sylhet, Bangladesh</li>
+            </ul>
+          </section>
+
+          <section className="edu-card glass-card">
+            <span className="edu-card-icon"><TbLanguage /></span>
+            <p className="edu-card-label">Languages</p>
+            <h2 className="edu-card-title">Spoken languages</h2>
+
+            <ul className="lang-list">
+              {languages.map(({ name, level }) => (
+                <li key={name}>
+                  <span>{name}</span>
+                  <span className="pill">{level}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
         </div>
       </div>
-
     </div>
   )
 }

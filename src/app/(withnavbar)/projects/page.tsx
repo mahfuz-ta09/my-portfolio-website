@@ -1,75 +1,87 @@
-'use client'
 import "@/css/Projects/Projects.css"
-import { faArrowLeft, faArrowRight , faGlobe, faMobileScreen , faServer } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import type { Metadata } from "next"
+import { pageMetadata } from "@/lib/site"
+import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { TbBrandGithub, TbServer, TbWorld } from "react-icons/tb"
+import projects from "../../../../public/DataSet/projects.json"
 
-const iconMap: Record<string, any> = {
-  faGlobe: faGlobe,
-  faServer: faServer,
-  faMobileScreen: faMobileScreen,
+export const metadata: Metadata = pageMetadata(
+  "Projects",
+  "Full stack web projects by Md Mahfuz Anam Tasnim, including websites for NRC Education Group and MKN Global Consultancy, built with Next.js, React, Express, and MongoDB.",
+  "/projects"
+)
+
+const iconMap: Record<string, React.ElementType> = {
+  faGlobe: TbWorld,
+  faServer: TbServer,
+  faMobileScreen: TbBrandGithub,
 }
 
+const techLabels = {
+  frontend: "Frontend",
+  backend: "Backend",
+  hosting: "Hosting",
+  other: "Other",
+} as const
+
 const ProjectPage = () => {
-  const [project,setProject] = useState<any>(null)
-  const [projectId,setProjectId] = useState(1)
-  const [totalProject,setTotalProject] = useState(0)
-
-  useEffect(() => {
-    fetch("/DataSet/projects.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTotalProject(data?.length)
-        const matchedProject = data.find((proj:any) => proj.id === projectId)
-        setProject(matchedProject || null)
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }, [projectId])
-
-  const handleProjectId = (id: number) => {
-    if(projectId + id > 0 && projectId + id <= 2) {
-      setProjectId(projectId + id)
-    }
-  }
-  
-
   return (
-    <div className="projects-holder">
-      <div className="project-details">
-        <h6>[{project?.id}/{totalProject}]</h6>
-        <h1>{project?.projectName}</h1>
-        <div className="link-container-1">
-          {
-            project?.links?.map((link:any) => (
-              <Link key={link?.name} href={link?.url} target="_blank" className="project-link">
-                {link?.url && <FontAwesomeIcon icon={iconMap[link?.icon]} className="link-icon" />}
-                {link?.url && <span>{link?.name}</span>}
-              </Link>
-            ))
-          }
-        </div>
-        <div className="project-description">
-          <div className="description">
-            {project?.description?.map((desc:any) => (
-              <p key={desc}><span>-</span>{desc}</p>
-            ))}
-          </div>
+    <div className="section-holder">
+      <div className="section-wrap">
+        <header>
+          <p className="section-eyebrow">Projects</p>
+          <h1 className="section-title">Things I&apos;ve built</h1>
+        </header>
 
-          <div className="project-tech">
-            {project?.technology?.frontend && <h5>Frontend: <span>{project?.technology?.frontend}</span></h5>}
-            {project?.technology?.backend && <h5>Backend: <span>{project?.technology?.backend}</span></h5>}
-            {project?.technology?.hosting && <h5>Hosted: <span>{project?.technology?.hosting}</span></h5>}
-            {project?.technology?.other && <h5>Other: <span>{project?.technology?.other}</span></h5>}
-          </div>
+        <div className="project-grid">
+          {projects.map((project) => {
+            const [summary, ...features] = project.description
+            return (
+              <article key={project.id} className="project-card glass-card">
+                <div className="project-image">
+                  <Image
+                    src={project.image}
+                    alt={`${project.projectName} preview`}
+                    fill
+                    sizes="(max-width: 860px) 100vw, 500px"
+                  />
+                </div>
+
+                <div className="project-body">
+                  <h2 className="project-name">{project.projectName}</h2>
+                  <p className="project-summary">{summary}</p>
+
+                  <ul className="project-features">
+                    {features.map((feature) => <li key={feature}>{feature}</li>)}
+                  </ul>
+
+                  <dl className="project-tech">
+                    {(Object.keys(techLabels) as (keyof typeof techLabels)[]).map((key) =>
+                      project.technology[key] ? (
+                        <div key={key}>
+                          <dt>{techLabels[key]}</dt>
+                          <dd>{project.technology[key]}</dd>
+                        </div>
+                      ) : null
+                    )}
+                  </dl>
+
+                  <div className="project-links">
+                    {project.links.filter((link) => link.url).map((link) => {
+                      const Icon = iconMap[link.icon]
+                      return (
+                        <Link key={link.name} href={link.url} target="_blank" className="project-link">
+                          {Icon && <Icon />}{link.name}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              </article>
+            )
+          })}
         </div>
-      </div>
-      {/* <div className="project-image"> */}
-        {/* <img src={project?.image} alt={project?.projectName} />  */}
-      {/* </div> */}
-      <div className="project-navigation">
-        <button onClick={()=>handleProjectId(-1)}><FontAwesomeIcon icon={faArrowLeft}/></button>
-        <button onClick={()=>handleProjectId(1)}><FontAwesomeIcon icon={faArrowRight}/></button>
       </div>
     </div>
   )

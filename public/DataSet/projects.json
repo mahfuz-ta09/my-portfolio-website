@@ -20,12 +20,12 @@
             }
         ],
         "description": [
-            "This is a website for NRC Education Group, a UK-based consultancy firm, designed to provide services for students.",
+            "A website for NRC Education Group, a UK-based consultancy firm that provides services for students.",
             "Students can submit documents and access courses or universities through this website.",
             "Users can submit documents to apply as an agent.",
-            "Students can gain detailed knowledge about English tests.",
+            "Students can learn about English language tests in detail.",
             "A complete system has been developed for admin/super admin to manage various website data.",
-            "Custom authentication system."
+            "Built a custom authentication system."
         ],
         "technology": {
             "frontend": "Next.js, Vanilla CSS, TypeScript, Redux Toolkit",
@@ -56,15 +56,15 @@
             }
         ],
         "description": [
-            "This is a website for NRC Global Consultancy, a UK-based consultancy firm, designed to provide services for students.",
+            "A website for MKN Global Consultancy, a UK-based consultancy firm that provides services for students.",
             "Students can submit documents and access courses or universities through this website.",
             "Users can submit documents to apply as an agent.",
-            "Students can gain detailed knowledge about English tests.",
+            "Students can learn about English language tests in detail.",
             "A complete system has been developed for admin/super admin to manage various website data.",
-            "Custom authentication system."
+            "Built a custom authentication system."
         ],
         "technology": {
-            "frontend": "React , React router , vanilla CSS+Tailwind CSS",
+            "frontend": "React, React Router, Vanilla CSS, Tailwind CSS",
             "backend": "",
             "hosting": "Frontend hosted on Netlify",
             "other": ""

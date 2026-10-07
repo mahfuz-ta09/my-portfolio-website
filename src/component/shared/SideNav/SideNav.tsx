@@ -1,54 +1,75 @@
 "use client"
 import '@/css/SideNav/SideNav.css'
+import Image from 'next/image'
 import Link from 'next/link'
-import { FaBars, FaGlobe, FaHome } from "react-icons/fa"
-import { FaMobile } from "react-icons/fa"
-import { FaCrop } from "react-icons/fa"
-import { FaQuidditch } from "react-icons/fa"
-import { BsFillMortarboardFill } from "react-icons/bs"
 import { usePathname } from 'next/navigation'
-import { MdCancel } from 'react-icons/md'
 import { useEffect, useRef, useState } from 'react'
+import { TbBriefcase, TbCode, TbHome, TbMail, TbMenu2, TbSchool, TbStack2, TbX } from 'react-icons/tb'
 
+const links = [
+  { href: '/', label: 'Home', icon: TbHome },
+  { href: '/experience', label: 'Experience', icon: TbBriefcase },
+  { href: '/projects', label: 'Projects', icon: TbCode },
+  { href: '/skills', label: 'Tech', icon: TbStack2 },
+  { href: '/education', label: 'Education', icon: TbSchool },
+  { href: '/contact', label: 'Contact', icon: TbMail },
+]
 
 const SideNav = () => {
-    const pathName = usePathname()
-    const [isOpen,setIsOpen] = useState(false)
-    const linkRef = useRef<HTMLUListElement>(null)
+  const pathName = usePathname()
+  const [isOpen, setIsOpen] = useState(false)
+  const navRef = useRef<HTMLDivElement>(null)
 
-
+  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-        if (linkRef.current && !linkRef.current.contains(event.target as Node)) {
-          setIsOpen(false)
-        }
-    }
-    
-    useEffect(() => {
-      document.addEventListener("mousedown", handleClickOutside)
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside)
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsOpen(false)
       }
-    },[])
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
 
-    return (
-        <div className="nav-container">
-            <div className="nav-body">
-                {/* <FaGlobe className='FaGlobe'/> */}
-                <img className='nav-profile' src="https://i.ibb.co.com/NK3TRvY/myppic.jpg" alt="" />
-                {isOpen ? <MdCancel onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>
-                : <FaBars onClick={()=>setIsOpen(!isOpen)} className='nav-cntrl'/>}
-                <ul ref={linkRef} className={isOpen?'nav-list show':'nav-list hide'}>
-                    <Link onClick={()=>setIsOpen(false)} href="/" className={pathName === '/' ? 'active' : 'link-container'}><FaHome  className={pathName === '/' ? 'active-icon' : 'icon'}/><div className='liink'>Home</div></Link>
-                    <Link onClick={()=>setIsOpen(false)} href="/projects" className={pathName === '/projects' ? 'active' : 'link-container'}><FaCrop   className={pathName === '/projects' ? 'active-icon' : 'icon'}/><div className='liink'>Projects</div></Link>
-                    <Link onClick={()=>setIsOpen(false)} href="/skill&tech" className={pathName === '/skill&tech' ? 'active' : 'link-container'}><FaQuidditch   className={pathName === '/skill&tech' ? 'active-icon' : 'icon'}/><div className='liink'>Tech</div></Link>
-                    {/* <Link onClick={()=>setIsOpen(false)} href="/blog"  className={pathName === '/blog' ? 'active' : 'link-container'}><FaRegFilePdf   className={pathName === '/contact' ? 'active-icon' : 'link-container'}/><div className='liink'>Blogs</div></Link> */}
-                    <Link onClick={()=>setIsOpen(false)} href="/education" className={pathName === '/education' ? 'active' : 'link-container'}><BsFillMortarboardFill  className={pathName === '/education' ? 'active-icon' : 'icon'}/><div className='liink'>Education</div></Link>
-                    <Link onClick={()=>setIsOpen(false)} href="/contact" className={pathName === '/contact' ? 'active' : 'link-container'}><FaMobile  className={pathName === '/contact' ? 'active-icon' : 'icon'}/><div className='liink'>Contact</div></Link>
-                </ul>
-            </div>
-        </div>
-    )
+  return (
+    <header className="nav-container">
+      <div className="nav-body" ref={navRef}>
+        <Link href="/" className="nav-brand" onClick={() => setIsOpen(false)}>
+          <Image
+            className="nav-profile"
+            src="https://i.ibb.co.com/NK3TRvY/myppic.jpg"
+            alt="Md Mahfuz Anam Tasnim"
+            width={40}
+            height={40}
+          />
+          <span className="nav-name">Mahfuz<span>.</span></span>
+        </Link>
+
+        <button
+          className="nav-toggle"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <TbX /> : <TbMenu2 />}
+        </button>
+
+        <nav className={isOpen ? 'nav-list open' : 'nav-list'}>
+          {links.map(({ href, label, icon: Icon }) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setIsOpen(false)}
+              className={pathName === href ? 'nav-link is-active' : 'nav-link'}
+              aria-current={pathName === href ? 'page' : undefined}
+            >
+              <Icon className="nav-link-icon" />
+              {label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
+  )
 }
-
 
 export default SideNav

@@ -1,241 +1,168 @@
-.contact-holder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: 100vh;
-    width: 100%;
-}
-
-
-.form-container-header{
-  text-align: start;
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
   width: 100%;
-  color: white;
-  font-size: 18px;
-}
-.contact-icon{
-    width: 25px;
-    height:25px;
+  max-width: 1000px;
+  padding: 48px;
 }
 
-
-.form-container {
-  padding: 20px;
-  border-radius: 8px;
-  width: 100%;
-  margin: 5vh auto;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+/* Info column */
+.contact-text {
+  margin-top: 16px;
+  color: rgb(191, 194, 197);
+  font-size: 15px;
+  line-height: 1.7;
 }
-
-
-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  width: 80%;
-  min-height: 350px;
-}
-
 
 .contact-list {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 20px;
-  width: 80%;
-  border-left: 3px solid rgb(4, 225, 225);
-  height: 350px;
+  gap: 14px;
+  margin-top: 32px;
+  list-style: none;
 }
 
-.contact-list h1{
+.contact-item {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 5px;
-  color: white;
+  gap: 14px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.contact-list p{
-  text-align: justify;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  line-height: 18px;
-  padding-top: 10px;
+.contact-item-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(4, 225, 225, 0.35);
+  border-radius: 12px;
+  color: rgb(4, 225, 225);
+  font-size: 20px;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.name-secton{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-weight: 400;
-  color: white;
+.contact-item:hover .contact-item-icon {
+  background: rgb(4, 225, 225);
+  color: rgb(13, 34, 66);
+}
+
+.contact-item-label {
+  display: block;
+  color: rgb(150, 160, 175);
+  font-size: 12px;
+}
+
+.contact-item-value {
+  display: block;
   font-size: 15px;
+  font-weight: 500;
+  word-break: break-word;
 }
 
-.email-section{
+/* Form column */
+.contact-form {
   display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  color: rgb(191, 194, 197);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: rgb(4, 225, 225);
+  box-shadow: 0 0 0 3px rgba(4, 225, 225, 0.15);
+}
+
+.field [aria-invalid="true"] {
+  border-color: rgb(255, 120, 120);
+}
+
+.field-error {
+  color: rgb(255, 120, 120);
+  font-size: 12px;
+}
+
+.submit-btn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-top: 5px;
-  font-weight: 400;
-  font-size: 15px;
-  color: white;
-}
-
-
-.form-text{
-    width: 100%;
-    margin-top: 5px;
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
-}
-
-.name-input{
-    width: 100%;
-    padding: 4px;
-    border: 1px solid #fff;
-    border-radius: 6px;
-    background: transparent;
-    color: #fff;
-}
-
-.text-input{
-    width: 100%;
-    min-height: 10vh;
-    padding: 5px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background: transparent;
-    color: #fff;
-}
-
-.form-group{
-    width: 100%;
-}
-
-.submit-btn{
-  padding: 10px;
-  width: 30%;
-  margin: 15px auto;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 12px 28px;
   border: none;
-  background-color: white;
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  border-radius: 4px;
+  border-radius: 10px;
+  background: rgb(4, 225, 225);
+  color: rgb(13, 34, 66);
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: 800;
+  transition: transform 0.15s ease, opacity 0.2s ease;
 }
 
 .submit-btn:hover {
-  transition: .1s ease-in-out;
-  background-color: rgb(56, 212, 212);
+  transform: translateY(-1px);
+  opacity: 0.9;
 }
 
-@media screen and (max-width:1370px) {
-
-  .form-container {
-    margin: 0vh auto;
-    height: auto;
-    padding: 10px 20px;
-  }
-  .name-secton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-weight: 400;
-  }
-
-  .email-section{
-    width: 100%;
-    gap: 0px;
-    margin-top: 5px;
-    font-weight: 400;
-  }
-
-  .name-input{
-    width: 100%;
-    padding: 4px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    color: #fff;
-  }
-
-  .text-input{
-      width: 100%;
-      min-height: 5vh;
-      padding: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      color: #fff;
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }
 
+@media screen and (max-width: 860px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px;
+  }
 }
 
-@media screen and (max-width:450px) {
-
-  .contact-icon{
-      width: 20px;
-      height: 20px;
+@media screen and (max-width: 450px) {
+  .contact-card {
+    padding: 24px 20px;
+    border-radius: 16px;
   }
 
-  .contact-holder{
-    width: 100%;
-    height: 92vh;
-    overflow: auto;
-  } 
-
-  .form-container {
-    padding: 10px;
-    border-radius: 8px;
-    width: 95%;
-    margin: 10vh auto 0;
-    flex-direction: column-reverse;
-  }
-  .contact-list {
-    border-left: none;
-    border-bottom: 3px solid rgb(4, 225, 225);
-    text-align: start;
-    align-items: start;
-  }
-  
-  .contact-list h1{
-    font-size: 16px;
-  }
-
-  .name-secton{
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    font-weight: 300;
-  }
-
-  .email-section{
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    font-weight: 300;
-  }
-  
-  
-}
-
-
-@media screen and (max-width:375px) {
-  .form-container {
-    /* margin: 5vh auto 0; */
+  .submit-btn {
+    align-self: stretch;
   }
 }

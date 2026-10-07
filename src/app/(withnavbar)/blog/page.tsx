@@ -1,4 +1,11 @@
 import "@/css/BLog/BLog.css"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Blog",
+  alternates: { canonical: "/blog" },
+  robots: { index: false, follow: true },
+}
 
 const BlogPage = () => {
   return (
